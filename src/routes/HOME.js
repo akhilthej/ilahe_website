@@ -47,32 +47,32 @@ const Home = () => {
           <div class="mx-auto max-w-[55rem]">
             <div class="text-center">
               <null class="cursor-default text-sm sm:text-2xl font-extrabold leading-8 text-gray-900">
-                DESIGN . DEVELOP & DEPLOY
+                FASHION . STYLE . EXECUTIVE
               </null>
               <h1 class="cursor-default pb-0 sm:pb-5 upanddown font-extrabold text-transparent text-4xl md:text-7xl lg:text-8xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3 leading-[3.5rem] tracking-tight">
                 Ilahe
               </h1>
 
               <p class="cursor-default text-sm sm:text-xl font-extrabold leading-8 text-gray-900">
-                Take your brand online today for a global presence.
+                Modeling and Finishing School
               </p>
             </div>
             <div class="mt-6 flex items-center justify-center gap-4 flex-wrap">
               <a href="/contactus">
                 <button class="text-xs sm:text-sm transform rounded bg-pink-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">
-                  Build Today
+                  Apply Now
                 </button>
               </a>
-              <a href="/getquotation">
+              <a href="https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20looking%20some%20information.">
                 <button class="text-xs sm:text-sm transform rounded border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-orange-600 hover:text-black">
-                  Get Quotation
+                  Whatsapp
                 </button>
               </a>
             </div>
           </div>
         </section>
 
-        {/* Video 
+        {/* Video */}
         <div className="flex justify-center items-center">
           <video
             className="rounded-lg"
@@ -81,12 +81,12 @@ const Home = () => {
             width="80%"
             height="auto"
             autoPlay
-            muted
             playsInline
+            preload="metadata" 
           >
             <source src={HomeVideo} type="video/mp4" />
           </video>
-        </div>*/}
+        </div>
 
         {/* Tagline */}
         <section className="flex items-center my-10 justify-center  bg-white ">

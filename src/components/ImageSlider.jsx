@@ -6,42 +6,34 @@ const ImageSlider = () => {
     {
       url:
         'https://drive.google.com/uc?id=1dLGvW3ntk2ey8sgizhgVgamm5krs5wTR',
-      title: 'Web Development',
+      title: 'Modeling School',
       description: 'Create stunning websites, engage, grow online.',
-      button1: { text: 'Get Quotation', link: '/best-web-developement-company' },
+      button1: { text: 'Get Quotation', link: '/best-modeling-school-in-india' },
       button2: { text: 'Contact us', link: 'https://api.whatsapp.com/send?phone=918143407758&text=Hi,%20need%20Detials%20Regarding%20WebDevelopment' },
     },
     {
       url:
         'https://drive.google.com/uc?id=11Q8mC0-QPAbxfEeKNU55cry3SgXwAgez',
-      title: 'Digital Marketing',
+      title: 'Finishing School',
       description: 'Boost brands, reach audiences, measure results.',
-      button1: { text: 'Learn More', link: '/best-digital-marketing-company' },
+      button1: { text: 'Learn More', link: '/best-Finishing-school-in-india' },
       button2: { text: 'Contact Us', link: 'https://api.whatsapp.com/send?phone=918143407758&text=Hi,%20need%20Detials%20Regarding%20DigitalMarketing' },
     },
     {
       url:
         'https://drive.google.com/uc?id=11fb_KYdIeRtpYuu-1zXROl63HtcZjP96',
-      title: 'Graphic Designing',
+      title: 'About ilahe',
       description: 'Design visuals, convey messages, inspire creativity.',
-      button1: { text: 'Explore', link: '/best-graphic-designing-company' },
+      button1: { text: 'Explore', link: '/aboutus' },
       button2: { text: 'Contact Us', link: 'https://api.whatsapp.com/send?phone=918143407758&text=Hi,%20need%20Detials%20Regarding%20GraphicDesigning' },
     },
     {
       url:
         'https://drive.google.com/uc?id=1Dxm5_ZCSjFzJsOc3v-pb7PCPjP34KSgp',
-      title: 'Branding',
+      title: 'Need More Detials?',
       description: 'Craft identities, build trust, leave impressions.',
-      button1: { text: 'Learn More', link: '/best-brand-services-company' },
-      button2: { text: 'Contact us', link: 'https://api.whatsapp.com/send?phone=918143407758&text=Hi,%20need%20Detials%20Regarding%20Branding' },
-    },
-    {
-      url:
-        'https://drive.google.com/uc?id=1LM6xO9CIRwz0l3jfi-rduTt4K9zFTAPH',
-      title: 'Advertising',
-      description: 'Promote products, captivate audiences, drive sales.',
-      button1: { text: 'Learn More', link: '/best-advertising-company' },
-      button2: { text: 'Contact us', link: 'https://api.whatsapp.com/send?phone=918143407758&text=Hi,%20need%20Detials%20Regarding%20Advertising' },
+      button1: { text: 'Email', link: 'mailto:admin@ilahe.in' },
+      button2: { text: 'Whatapp', link: 'https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20looking%20some%20information.' },
     },
   ];
 

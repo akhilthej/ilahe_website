@@ -71,6 +71,22 @@ const Navbar = () => {
                           </Link>
                         )}
                       </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link to="/contactus">
+                            <a
+                              className={classNames(
+                                active
+                                  ? "bg-yellow-500 text-white"
+                                  : "text-black",
+                                "block px-4 py-2 text-sm"
+                              )}
+                            >
+                              Finishing School
+                            </a>
+                          </Link>
+                        )}
+                      </Menu.Item>
 
                       <Menu.Item>
                         {({ active }) => (
@@ -123,41 +139,7 @@ const Navbar = () => {
                       )}
                     </Menu.Item>
 
-                    <div className="py-1 lg:hidden ">
-                      <Menu.Item>
-                        {({ active }) => (
-                          <Link to="/aboutus">
-                            <a
-                              className={classNames(
-                                active
-                                  ? "bg-yellow-500 text-white"
-                                  : "text-black",
-                                "block px-4 py-2 text-sm"
-                              )}
-                            >
-                              About us
-                            </a>
-                          </Link>
-                        )}
-                      </Menu.Item>
-
-                      <Menu.Item>
-                        {({ active }) => (
-                          <Link to="/contactus">
-                            <a
-                              className={classNames(
-                                active
-                                  ? "bg-yellow-500 text-white"
-                                  : "text-black",
-                                "block px-4 py-2 text-sm"
-                              )}
-                            >
-                              Contact us
-                            </a>
-                          </Link>
-                        )}
-                      </Menu.Item>
-                    </div>
+                    
                   </Menu.Items>
                 </Transition>
               </Menu>

@@ -12,7 +12,6 @@ import {
 const routes = [
   { path: '/', element: <Home /> },
   { path: '/*', element: <Error404 /> },
-  { path: '/services', element: <Services /> },
   { path: '/best-web-developement-company', element: <WebDevelopment /> },
   { path: '/web-developement-company-in-vizag', element: <WebDevelopment /> },
   { path: '/best-web-developement-company-in-vizag', element: <WebDevelopment /> },

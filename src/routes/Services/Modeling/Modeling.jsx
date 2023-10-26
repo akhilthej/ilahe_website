@@ -1,11 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+import FinishingPriceTable from '../../../components/FinishingPriceTable'
+
+import M_cover from './M_Cover.webp'
 
 const Modeling = () => {
   return (
     <div>
      {/* Title Card */}
-     <section className="py-20 sm:py-40" style={{ backgroundImage: 'url("https://drive.google.com/uc?id=1E3eQlScwaZ2DGrZPqN5Ve7qaixUaCKRc")', backgroundSize: 'cover', backgroundPosition: 'left' }}>
+     <section className="py-20 sm:py-40" style={{ backgroundImage: `url(${M_cover})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
      <div className="flex flex-col items-center md:flex-row justify-center">
        <div className="md:w-1/2 md:pr-10">
         
@@ -13,10 +17,10 @@ const Modeling = () => {
        <div className="md:w-1/2 px-5">
          <div className="text-right md:text-left"> {/* Align titles to the right on mobile, left on larger screens */}
            <h1 className="text-2xl pb-5 md:text-6xl fade-in-down font-extrabold text-center text-white tracking-tight">
-           WebRevap
+           Modeling
            </h1>
            <p className="text-white sm:text-sm text-xs text-center sm:ml-0">
-             "Cyber Space Digital stands as a distinguished leader in the realm"
+           Let's Build Fashion With Style.
            </p>
    
            <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -26,7 +30,7 @@ const Modeling = () => {
                </a>
              </Link>
    
-             <a href="https://api.whatsapp.com/send?phone=918143407758&text=Welcome%20to%20Cyberspacedigital">
+             <a href="https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20looking%20FinishingSchool">
                <a className="transform rounded-md bg-white px-5 py-3 font-medium text-black transition-colors hover:bg-black hover:text-white">
                  WhatsApp
                </a>
@@ -36,6 +40,93 @@ const Modeling = () => {
        </div>
      </div>
    </section>
+
+
+
+    {/* Tagline */}
+    <section className="flex items-center my-10 justify-center  bg-white ">
+          <div className="mx-auto max-w-[55rem]">
+            <div className="text-center">
+              <p className="cursor-default text-xl sm:text-4xl font-extrabold  text-gray-900">
+              WHAT IS FINISHING SCHOOL ?
+              </p>
+
+              <p className="cursor-default text-sm sm:text-xl pt-5  text-gray-900">
+              “A finishing school, such as ILAHE, focuses on training students in overall personality development and cultural and social activities. Our goal is to motivate and educate individuals in developing the right attitude, which is crucial for achieving growth and success later in life. Through our efforts, we aim to develop the personality traits of our students and bridge any skill gaps that may hinder them from seeking employment in various sectors. Our initiative is to create a new culture in India where all youth have equal opportunities to succeed and contribute to building a better nation and brighter future.”
+              </p>
+            </div>
+            <div className="mt-6 flex items-center justify-center gap-4 flex-wrap"></div>
+            <div className="mt-6 flex items-center justify-center gap-4 flex-wrap">
+              <a href="https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20looking%20FinishingSchool">
+                <button className="text-xs sm:text-sm transform rounded bg-pink-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">
+                  Contact Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+
+        <FinishingPriceTable />
+ {/*Whatdowedo */}
+ <section>
+          <div className="cursor-default px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div className="max-w-screen-md mb-8 lg:mb-16">
+              <h2 className="font-extrabold text-transparent text-4xl md:text-5xl lg:text-8xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3 text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] leading-[3.5rem] tracking-tight text-black">
+              Who is it for?
+              </h2>
+              <p className=" cursor-default text-sm sm:text-xl text-gray-900 ">
+              <li>People seeking a professional and personal life balance</li>
+              <li>Professionals who wish to enhance their career life</li>
+              <li>Ladies looking for exposure in a different field</li>
+              <li>Amateurs want to develop a personal and professional image</li>
+              <li>For all ladies who wish to be empowered, bloom to their fullest potential, and have the secret ingredient to the life of their dreams.</li>
+              </p>
+
+              <h2 className="pt-10 font-extrabold text-transparent text-4xl md:text-5xl lg:text-8xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3 text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] leading-[3.5rem] tracking-tight text-black">
+              APPLICATION GUIDELINES
+              </h2>
+              <p className=" cursor-default text-sm sm:text-xl text-gray-900 ">
+              <li>You do not need Professional Photographs to apply.</li>
+              <li>No selfies , Please ask a friend to help you.</li>
+              <li>No sunglasses or hats.</li>
+              <li>No or minimal make-up and no filters.</li>
+              <li>Try to use natural light.</li>
+              <li>Photographs must be in color and in focus.</li>
+              <li>Please try to upload at least one full length and one close up picture.</li>
+              <p>Once you have made your application, we will do our best to get back to you within five working days. If you have not heard back from us, please call us and quote your full name and email address.</p>
+              <p>While your waiting to hear back,keep up to date with ILAHE by following us on social media.</p>
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+{/* "Documentation" section */}
+<section className="text-center mx-auto my-8">
+          <h2 className="cursor-default pb-2 font-extrabold text-transparent text-2xl md:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3  tracking-tight ">
+            Apply Now
+          </h2>
+          <p className="cursor-default text-sm font-medium text-black mb-5">
+            Explore our comprehensive documentation for more information on our
+            services.
+          </p>
+
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            <a href="https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20want%20to%20apply%20for%20FinishingSchool">
+              <button className="text-xs sm:text-sm transform rounded bg-pink-500 border border-slate-200 px-20 py-2 font-medium text-black transition-colors hover:bg-slate-50 ">
+                Apply Now
+              </button>
+            </a>
+            <Link to="/contactus">
+              <button className="text-xs sm:text-sm transform rounded border border-slate-200 px-14 py-2 font-medium text-black transition-colors hover:bg-slate-50 hover:text-black">
+                Contact us
+              </button>
+            </Link>
+          </div>
+        </section>
+
    </div>
   )
 }

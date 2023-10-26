@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="grid gap-5 md:grid-cols-2 md:gap-10 lg:gap-20">
         <div className="flex justify-center md:justify-end">
           <img
-            className="mx-auto w-44"
+            className="mx-auto sm:flex"
             src={Subscribe}
             alt="Marketing newsletter via computer Illustration in PNG, SVG"
           />

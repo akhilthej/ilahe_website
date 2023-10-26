@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9037555.css",
-    "main.js": "/static/js/main.22c01a60.js",
-    "static/media/homepage1.mp4": "/static/media/homepage1.3057c3e6533fc183f0f9.mp4",
+    "main.css": "/static/css/main.6cbd7d04.css",
+    "main.js": "/static/js/main.e5f82dca.js",
+    "static/media/F_Cover.png": "/static/media/F_Cover.da875043450bedda2248.png",
+    "static/media/homepage1.mp4": "/static/media/homepage1.eda17d0709d76e2b9ab9.mp4",
+    "static/media/M_Cover.webp": "/static/media/M_Cover.32f303bc0d0be8c5aeda.webp",
     "static/media/LAN-001-white.png": "/static/media/LAN-001-white.4cd2dfdc96667fc57a19.png",
     "static/media/ARK-001-white.png": "/static/media/ARK-001-white.7552533bfc49040f3d2c.png",
     "static/media/ILA-001-white.png": "/static/media/ILA-001-white.f564de403c6562c37412.png",
@@ -11,6 +13,9 @@
     "static/media/LAC-002.png": "/static/media/LAC-002.95d8b66361c91a1d4c24.png",
     "static/media/ARK-002.png": "/static/media/ARK-002.0907260de9996bb721f2.png",
     "static/media/ILA-002.png": "/static/media/ILA-002.dc2e513de4db7ae2ddb1.png",
+    "static/media/CSDLogo.svg": "/static/media/CSDLogo.ed4842a8384c69e12c4d9de61d76a4a4.svg",
+    "static/media/csdv2Logofooter.svg": "/static/media/csdv2Logofooter.ed4842a8384c69e12c4d9de61d76a4a4.svg",
+    "static/media/csdv2Logonavbar.svg": "/static/media/csdv2Logonavbar.ed4842a8384c69e12c4d9de61d76a4a4.svg",
     "static/media/HeroCoverBG.png": "/static/media/HeroCoverBG.d4a05e8db52361610406.png",
     "static/media/Subscribe.png": "/static/media/Subscribe.68f61a5d75abbc0d1333.png",
     "static/media/graphicsdesign.png": "/static/media/graphicsdesign.ac5cc1edae28e3741537.png",
@@ -30,21 +35,18 @@
     "static/media/ecommercewebsite.svg": "/static/media/ecommercewebsite.b0a1117b91f58cdbefffbd17939f9a32.svg",
     "static/media/SoftwareDeveloper.svg": "/static/media/SoftwareDeveloper.7aa91a6ff18b5a02526967bdfd98443e.svg",
     "static/media/crm_ermpannel.svg": "/static/media/crm_ermpannel.c9a188ec3cdbbeefcd7f3432bffece32.svg",
-    "static/media/CSDLogo.svg": "/static/media/CSDLogo.041d66dee62439cf6ddd948fb2b3b8b0.svg",
     "static/media/OntimeDelivery.svg": "/static/media/OntimeDelivery.2d9b87e51310b6c48d381d9335011a5a.svg",
-    "static/media/csdv2Logofooter.svg": "/static/media/csdv2Logofooter.fd1b0a495973bc9e3a9d8b4c42fed61b.svg",
-    "static/media/csdv2Logonavbar.svg": "/static/media/csdv2Logonavbar.3fa8f66adfcfef202819dc65c9504133.svg",
     "static/media/webrevamp.svg": "/static/media/webrevamp.5db8d95ce4f7f1a3c8836b7630983134.svg",
     "index.html": "/index.html",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.e9037555.css.map": "/static/css/main.e9037555.css.map",
-    "main.22c01a60.js.map": "/static/js/main.22c01a60.js.map"
+    "main.6cbd7d04.css.map": "/static/css/main.6cbd7d04.css.map",
+    "main.e5f82dca.js.map": "/static/js/main.e5f82dca.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9037555.css",
-    "static/js/main.22c01a60.js"
+    "static/css/main.6cbd7d04.css",
+    "static/js/main.e5f82dca.js"
   ]
 }

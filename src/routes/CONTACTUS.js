@@ -51,13 +51,13 @@ const CONTACTUS = () => {
                 digital office.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a href="mailto:admin@cyberspacedigital.in">
+              <a href="mailto:admin@ilahe.in">
                   <a className="transform rounded-md bg-white px-5 py-3 font-medium text-black transition-colors hover:bg-black hover:text-white">
                     Email
                   </a>
                 </a>
               
-                <a href="https://api.whatsapp.com/send?phone=918143407758&text=Welcome%20to%20Cyberspacedigital">
+                <a href="https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20looking%20some%20information.">
                   <a className="transform rounded-md bg-white px-5 py-3 font-medium text-black transition-colors hover:bg-black hover:text-white">
                     WhatsApp
                   </a>
@@ -106,8 +106,9 @@ const CONTACTUS = () => {
                       />
                     </svg>
                     <div class="ml-2 text-sm sm:text-base text-md tracking-wide font-semibold w-">
-                      Shivaji Palem, Maddilapalem,
-                      <br /> Visakhapatnam, Andhra Pradesh 530017
+                    fifth floor, ABACUS TOWERS, 501, <br /> 
+                    beside Gvk One Mall, Banjara Hills, <br /> 
+                    Hyderabad, Telangana 500082.
                     </div>
                   </div>
 
@@ -129,7 +130,7 @@ const CONTACTUS = () => {
                       />
                     </svg>
                     <div class="ml-4 text-sm sm:text-base tracking-wide font-semibold w-40">
-                      +91 8143407758
+                      +91 8096598155
                     </div>
                   </div>
 
@@ -151,7 +152,7 @@ const CONTACTUS = () => {
                       />
                     </svg>
                     <div class="ml-4 text-sm sm:text-base tracking-wide font-semibold w-40">
-                      admin@cyberspacedigital.in
+                    admin@ilahe.in
                     </div>
                   </div>
                 </div>

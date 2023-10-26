@@ -13,7 +13,7 @@ import Error404 from '../components/Tools/Error404';
 import Home from './HOME';
 
 
-import Services from './Services/SERVICES';
+
 import WebDevelopment from './Services/WebDevelopment/Webdevelopment';
 import Modeling from "./Services/Modeling/Modeling";
 import FinishingSchool from "./Services/FinishingSchool/FinishingSchool";
@@ -41,7 +41,6 @@ Blogs,Clients,Reviews,Aboutus,Contactus,
 ReturnPolicy,
 
 /*Services */
-Services,
 WebDevelopment,Modeling,FinishingSchool,
 
 };
