@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import FinishingPriceTable from '../../../components/FinishingPriceTable'
+import FinishingPriceTable from '../../../components/FinishingCourcePrice/FinishingPriceTable'
 
 import M_cover from './M_Cover.webp'
 

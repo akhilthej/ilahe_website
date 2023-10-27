@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import F_cover from './F_Cover.png'
 
-import FinishingPriceTable from '../../../components/FinishingPriceTable'
+import FinishingPriceTable from '../../../components/FinishingCourcePrice/FinishingPriceTable'
 
 const FinishingSchool = () => {
   return (
