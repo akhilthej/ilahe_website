@@ -10,7 +10,7 @@ function classNames(...classes) {
 
 const Navbar = () => {
   return (
-    <section class="rounded-2xl sticky top-0 z-50 bg-white/90 drop-shadow-lg hidden sm:block ">
+    <section class=" sticky top-0 z-50 bg-white/90 drop-shadow-lg hidden sm:block ">
       <div className=" sm:px-2 w-full h-17 flex justify-between items-center text-black ">
         <Link to="/">
           <img
@@ -30,7 +30,7 @@ const Navbar = () => {
               <Link to="/best-Finishing-school-in-india">Finishing School</Link>
             </li>
             <li className="p-4 text-sm hidden lg:block font-medium antialiased rounded-md  px-4 py-2   text-black hover:bg-yellow-500  focus:outline-none">
-              <Link to="/clients">Clients</Link>
+              <Link to="/reviews">Reviews</Link>
             </li>
             <li className="p-4 text-sm hidden lg:block font-medium antialiased rounded-md  px-4 py-2   text-black hover:bg-yellow-500  focus:outline-none">
               <Link to="/blogs">Blogs</Link>
@@ -90,7 +90,7 @@ const Navbar = () => {
 
                       <Menu.Item>
                         {({ active }) => (
-                          <Link to="/clients">
+                          <Link to="/reviews">
                             <a
                               className={classNames(
                                 active
@@ -99,7 +99,7 @@ const Navbar = () => {
                                 "block px-4 py-2 text-sm"
                               )}
                             >
-                              Clients
+                              Reviews
                             </a>
                           </Link>
                         )}
@@ -117,7 +117,7 @@ const Navbar = () => {
                               "block px-4 py-2 text-sm"
                             )}
                           >
-                            Aboutus
+                            About ilahe
                           </a>
                         </Link>
                       )}

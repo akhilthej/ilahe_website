@@ -21,7 +21,6 @@ import FinishingSchool from "./Services/FinishingSchool/FinishingSchool";
 
 import Blogs from './BLOGS';
 
-import Clients from './Clients';
 import Reviews from './Reviews';
 
 
@@ -37,7 +36,7 @@ Navbar,Footer,
 PrivacyPolicy,TermsnConditions,Disclaimer,ShippingandDelivery,
 Error404,Home,
 
-Blogs,Clients,Reviews,Aboutus,Contactus,
+Blogs,Reviews,Aboutus,Contactus,
 ReturnPolicy,
 
 /*Services */

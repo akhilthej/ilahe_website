@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { Navbar, Footer, PrivacyPolicy,Modeling,FinishingSchool, TermsnConditions, Disclaimer, ShippingandDelivery, ReturnPolicy, Error404, Home, Aboutus, Contactus, Services, Blogs, Clients, Reviews } from './routes/Routesmap';
+import { Navbar, Footer, PrivacyPolicy,Modeling,FinishingSchool, TermsnConditions, Disclaimer, ShippingandDelivery, ReturnPolicy, Error404, Home, Aboutus, Contactus, Services, Blogs, Reviews } from './routes/Routesmap';
 import NavbarMobile from './components/Navbar/NavbarMobile';
 import Notification from "./components/Tools/Notifications";
 
@@ -20,7 +20,6 @@ const routes = [
   { path: '/best-Finishing-school-in-india', element: <FinishingSchool /> },
 
   { path: '/blogs', element: <Blogs /> },
-  { path: '/clients', element: <Clients /> },
   { path: '/reviews', element: <Reviews /> },
   { path: '/aboutus', element: <Aboutus /> },
   { path: '/contactus', element: <Contactus /> },

@@ -59,14 +59,14 @@ const HamburgerMenu = () => {
               Finishing School
             </a></Link>
           <Link to='/aboutus'><a className="text-2xl my-2" onClick={closeMenu}>
-              About
+              About ilahe
             </a></Link>
             <Link to='/contactus'><a className="text-2xl my-2" onClick={closeMenu}>
               Contact Us
             </a></Link>
             
-            <Link to='/clients'><a className="text-2xl my-2" onClick={closeMenu}>
-              Clients
+            <Link to='/reviews'><a className="text-2xl my-2" onClick={closeMenu}>
+            Reviews
             </a></Link>
             <Link to='/blogs'><a className="text-2xl my-2" onClick={closeMenu}>
               Blogs
