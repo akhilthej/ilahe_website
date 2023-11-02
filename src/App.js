@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar, Footer, PrivacyPolicy,Modeling,FinishingSchool, TermsnConditions, Disclaimer, ShippingandDelivery, ReturnPolicy, Error404, Home, Aboutus, Contactus, Services, Blogs, Reviews } from './routes/Routesmap';
 import NavbarMobile from './components/Navbar/NavbarMobile';
-import Notification from "./components/Tools/Notifications";
 
 import {
   WebDevelopment,
@@ -38,7 +37,6 @@ export function App() {
     <>
       <Navbar />
       <NavbarMobile />
-      <Notification />
       <Routes location={location} key={location.pathname}>
         {routes.map((route, index) => (
           <Route key={index} path={route.path} element={route.element} />

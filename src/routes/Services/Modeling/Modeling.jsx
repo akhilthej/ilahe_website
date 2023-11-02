@@ -1,15 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {GlobalData} from '../../../components/data/GlobalData'
 
-import FinishingPriceTable from '../../../components/FinishingCourcePrice/FinishingPriceTable'
-
-import M_cover from './M_Cover.webp'
+import ModelingPriceTable from '../../../components/PriceTables/ModelingSchool/ModlingPriceTable'
 
 const Modeling = () => {
   return (
     <div>
      {/* Title Card */}
-     <section className="py-20 sm:py-40" style={{ backgroundImage: `url(${M_cover})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
+     <section className="py-20 sm:py-40" style={{ backgroundImage: `url(${GlobalData.Coverimages.ModelingCover})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
      <div className="flex flex-col items-center md:flex-row justify-center">
        <div className="md:w-1/2 md:pr-10">
         
@@ -30,7 +29,7 @@ const Modeling = () => {
                </a>
              </Link>
    
-             <a href="https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20looking%20FinishingSchool">
+             <a href={GlobalData.company.companyWhatsapp}>
                <a className="transform rounded-md bg-white px-5 py-3 font-medium text-black transition-colors hover:bg-black hover:text-white">
                  WhatsApp
                </a>
@@ -57,7 +56,7 @@ const Modeling = () => {
             </div>
             <div className="mt-6 flex items-center justify-center gap-4 flex-wrap"></div>
             <div className="mt-6 flex items-center justify-center gap-4 flex-wrap">
-              <a href="https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20looking%20FinishingSchool">
+              <a  href={`tel:${GlobalData.company.companyPhone}`}>
                 <button className="text-xs sm:text-sm transform rounded bg-pink-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">
                   Contact Now
                 </button>
@@ -68,7 +67,8 @@ const Modeling = () => {
 
 
 
-        <FinishingPriceTable />
+        <ModelingPriceTable />
+        
  {/*Whatdowedo */}
  <section>
           <div className="cursor-default px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
@@ -114,7 +114,7 @@ const Modeling = () => {
           </p>
 
           <div className="flex items-center justify-center gap-4 flex-wrap">
-            <a href="https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20want%20to%20apply%20for%20FinishingSchool">
+            <a href={GlobalData.company.companyWhatsapp}>
               <button className="text-xs sm:text-sm transform rounded bg-pink-500 border border-slate-200 px-20 py-2 font-medium text-black transition-colors hover:bg-slate-50 ">
                 Apply Now
               </button>
@@ -126,9 +126,13 @@ const Modeling = () => {
             </Link>
           </div>
         </section>
+      
+{/*        <a href={`tel:${GlobalData.company.companyPhone}`}></a>
+<a href={`mailto:${GlobalData.company.companyEmail}`}></a> */}
 
    </div>
   )
 }
+
 
 export default Modeling
