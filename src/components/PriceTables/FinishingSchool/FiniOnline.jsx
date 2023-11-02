@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FinishingPriceTable = () => {
   return (
@@ -10,8 +11,7 @@ const FinishingPriceTable = () => {
       Pricing
     </h1>
     <p className="text-center text-lg text-gray-700 mt-2 px-6">
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam.
+      The following prices are independent.
     </p>
     <div className="h-1 mx-auto bg-indigo-200 w-24 opacity-75 mt-4 rounded" />
     <div className="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
@@ -70,13 +70,15 @@ const FinishingPriceTable = () => {
               </ul>
             </div>
             <div className="block flex items-center p-8  uppercase">
-              <button
+           
+              <a href='/best-Finishing-school-basic'
                 className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
+	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
               >
                 Select
-              </button>
+              </a>
+
             </div>
           </div>
         </div>
@@ -120,13 +122,13 @@ const FinishingPriceTable = () => {
             </ul>
           </div>
           <div className="block flex items-center p-8  uppercase">
-            <button
-              className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
+          <a href='/best-Finishing-school-basic'
+                className="mt-3 text-lg font-semibold 
+	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
-            >
-              Select
-            </button>
+              >
+                Select
+              </a>
           </div>
         </div>
         <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
@@ -165,13 +167,13 @@ const FinishingPriceTable = () => {
               </ul>
             </div>
             <div className="block flex items-center p-8  uppercase">
-              <button
+            <a href='/best-Finishing-school-basic'
                 className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
+	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
               >
                 Select
-              </button>
+              </a>
             </div>
           </div>
         </div>

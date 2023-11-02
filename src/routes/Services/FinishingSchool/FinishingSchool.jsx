@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import F_cover from './F_Cover.png'
+import { GlobalData } from '../../../components/data/GlobalData'
 
 import lvlexpert from '../Modeling/lvlexpert-mobeling-1.webp'
 import lvlelit from '../Modeling/lvlelirt-mobeling.webp'
@@ -14,7 +14,7 @@ const FinishingSchool = () => {
   return (
     <div>
      {/* Title Card */}
-     <section className="py-20 sm:py-40" style={{ backgroundImage: `url(${F_cover})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
+     <section className="py-20 sm:py-40" style={{ backgroundImage: `url(${GlobalData.Coverimages.FinishingCover})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
      <div className="flex flex-col items-center md:flex-row justify-center">
        <div className="md:w-1/2 md:pr-10">
         
@@ -86,7 +86,7 @@ const FinishingSchool = () => {
             Level-Basic
           </h3>
          
-          <Link to='/best-modeling-school-in-india'>
+          <Link to='/best-Finishing-school-basic'>
             <button className="mt-5 text-xs sm:text-sm transform rounded bg-black border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
           </Link>
         </div>
@@ -100,7 +100,7 @@ const FinishingSchool = () => {
             Level-Elite
           </h3>
           
-          <Link to='/best-Finishing-school-in-india'>
+          <Link to='/'>
           <button className="mt-5 text-xs sm:text-sm transform rounded bg-black border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
           </Link>
         </div>
@@ -114,7 +114,7 @@ const FinishingSchool = () => {
             Level-Expert
           </h3>
           
-          <Link to='/best-Finishing-school-in-india'>
+          <Link to='/'>
           <button className="mt-5 text-xs sm:text-sm transform rounded bg-black border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
           </Link>
         </div>

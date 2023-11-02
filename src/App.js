@@ -1,22 +1,17 @@
 import React from "react";
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { Navbar, Footer, PrivacyPolicy,Modeling,FinishingSchool, TermsnConditions, Disclaimer, ShippingandDelivery, ReturnPolicy, Error404, Home, Aboutus, Contactus, Services, Blogs, Reviews } from './routes/Routesmap';
+import { Navbar, Footer, PrivacyPolicy,Modeling,FinishingSchool,FinishingBasicService, TermsnConditions, Disclaimer, ShippingandDelivery, ReturnPolicy, Error404, Home, Aboutus, Contactus
+         , Blogs, Reviews } from './routes/Routesmap';
 import NavbarMobile from './components/Navbar/NavbarMobile';
 
-import {
-  WebDevelopment,
-
-} from './routes/Routesmap';
 
 const routes = [
   { path: '/', element: <Home /> },
   { path: '/*', element: <Error404 /> },
-  { path: '/best-web-developement-company', element: <WebDevelopment /> },
-  { path: '/web-developement-company-in-vizag', element: <WebDevelopment /> },
-  { path: '/best-web-developement-company-in-vizag', element: <WebDevelopment /> },
   
   { path: '/best-modeling-school-in-india', element: <Modeling /> },
   { path: '/best-Finishing-school-in-india', element: <FinishingSchool /> },
+  { path: '/best-Finishing-school-basic', element: <FinishingBasicService /> },
 
   { path: '/blogs', element: <Blogs /> },
   { path: '/reviews', element: <Reviews /> },

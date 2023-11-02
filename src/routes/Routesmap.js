@@ -14,9 +14,9 @@ import Home from './HOME';
 
 
 
-import WebDevelopment from './Services/WebDevelopment/Webdevelopment';
 import Modeling from "./Services/Modeling/Modeling";
 import FinishingSchool from "./Services/FinishingSchool/FinishingSchool";
+import FinishingBasicService from './Services/FinishingSchool/FinishingBasicService'
 
 
 import Blogs from './BLOGS';
@@ -40,6 +40,7 @@ Blogs,Reviews,Aboutus,Contactus,
 ReturnPolicy,
 
 /*Services */
-WebDevelopment,Modeling,FinishingSchool,
+Modeling,
+FinishingSchool,FinishingBasicService,
 
 };
