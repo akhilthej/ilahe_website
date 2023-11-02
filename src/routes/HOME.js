@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Brand_slider from "../components/Brand_slider";
-import ServicesTab from "../components/ServicesTab";
 
 import { HomeVideo } from "../components/data/data";
 import ImageSlider from "../components/ImageSlider";
@@ -13,14 +12,8 @@ import {
   TimeManage,
   HiringModel,
 } from "../components/data/data";
-import {
-  documentationicon,
-  socialicon,
-  analysisicon,
-  financeicon,
-  statergyicon,
-  businessreporticon,
-} from "../components/data/data";
+import { GlobalData } from "../components/data/GlobalData";
+
 
 const Home = () => {
   return (
@@ -103,7 +96,59 @@ const Home = () => {
         <Brand_slider />
 
         {/* Services */}
-        <ServicesTab />
+           {/*Line of Engagement */}
+ <section id="services" className="cursor-default section relative pt-10 pb-8 md:pt-16 md:pb-10">
+  <div className="xl:max-w-8xl mx-auto px-4">
+    {/* Heading for "Line of Engagement" section */}
+
+    <section className="text-center mx-auto mb-12 lg:px-20">
+
+    <p className="text-xl font-medium text-black">
+        website for startup compines
+      </p>
+      <h2 className="pb-2 font-extrabold text-transparent text-2xl md:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-600 ">
+        Build Your Web Office Online.
+      </h2>
+      <p className="text-sm font-medium text-black">
+      "Every business requires a unique website to effectively reach its customers or clients. At Cyber Space Digital, we're here to help you discover the best choices tailored to your needs."
+      </p>
+    </section>
+
+{/* "Modeling" section */}
+<div className="flex flex-wrap justify-center -mx-4 text-center">
+  <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
+    <div style={{ backgroundImage: 'url("https://drive.google.com/uc?id=11NXjq2_6_yas4Hi8C3h8_V79PLb-9FzR")', backgroundSize: 'cover', backgroundPosition: 'left' }} className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+      <h3 className="text-lg leading-normal mb-2 font-semibold text-white">
+        Modeling School
+      </h3>
+      <p className="text-gray-200 text-sm">
+        Catalyzing Business Success: Our business website solutions are designed to drive growth, enhance visibility, and boost profitability in the digital landscape.
+      </p>
+      <Link to='/best-modeling-school-in-india'>
+        <button className="mt-5 text-xs sm:text-sm transform rounded bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">Get Quotation</button>
+      </Link>
+    </div>
+  </div>
+
+  {/* "Finishing" section */}
+  <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
+    <div style={{ backgroundImage: 'url("https://drive.google.com/uc?id=11NXjq2_6_yas4Hi8C3h8_V79PLb-9FzR")', backgroundSize: 'cover', backgroundPosition: 'left' }} className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+      <h3 className="text-lg leading-normal mb-2 font-semibold text-white">
+      Finishing School
+      </h3>
+      <p className="text-gray-200 text-sm">
+        Catalyzing Business Success: Our business website solutions are designed to drive growth, enhance visibility, and boost profitability in the digital landscape.
+      </p>
+      <Link to='/best-Finishing-school-in-india'>
+        <button className="mt-5 text-xs sm:text-sm transform rounded bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">Get Quotation</button>
+      </Link>
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+
 
         {/* WE BUILD */}
         <section
@@ -117,107 +162,36 @@ const Home = () => {
           <div className="cursor-default py-40 flex flex-col items-center justify-center bg-black/70">
             <div className="text-center">
               <h2 className="font-extrabold text-transparent text-4xl md:text-5xl lg:text-8xl bg-clip-text bg-pink-400 tracking-tight ">
-                WE BUILD
+              Travelling worldwide
               </h2>
             </div>
             <div className="text-center">
               <h2 className="font-extrabold text-transparent text-5xl md:text-5xl lg:text-5xl bg-clip-text bg-orange-600 tracking-tight ">
-                SIMPLE BUT COMPLEX
+              and yourwide to transform your
               </h2>
             </div>
             <div className="text-center">
               <h2 className="font-extrabold text-transparent text-4xl md:text-5xl lg:text-8xl bg-clip-text bg-pink-400 tracking-tight ">
-                STABLE COMMUNITY
+              love towards “you” in an honest and truthful way.
               </h2>
             </div>
           </div>
         </section>
-
-        {/*Whatdowedo */}
-        <section>
+     
+ {/*Who is it for? */}
+ <section>
           <div className="cursor-default px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div className="max-w-screen-md mb-8 lg:mb-16">
               <h2 className="font-extrabold text-transparent text-4xl md:text-5xl lg:text-8xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3 text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] leading-[3.5rem] tracking-tight text-black">
-                What do we do?
+              Who is it for?
               </h2>
-              <p className=" text-black sm:text-xl ">
-                How we research our clients requirements and processes.
+              <p className=" cursor-default text-sm sm:text-xl text-gray-900 ">
+              <li>People seeking a professional and personal life balance</li>
+              <li>Professionals who wish to enhance their career life</li>
+              <li>Ladies looking for exposure in a different field</li>
+              <li>Amateurs want to develop a personal and professional image</li>
+              <li>For all ladies who wish to be empowered, bloom to their fullest potential, and have the secret ingredient to the life of their dreams.</li>
               </p>
-            </div>
-            <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-              <div>
-                <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                  <img src={documentationicon} alt="documentation" />
-                </div>
-                <h3 className="text-black mb-2 text-xl font-bold ">
-                  Documentation
-                </h3>
-                <p className="text-black ">
-                  Seems to be a herculean task for a project manager. Project
-                  managers are often engaged in delivering high-end complex
-                  projects.
-                </p>
-              </div>
-              <div>
-                <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                  <img src={analysisicon} alt="analysisicon" />
-                </div>
-                <h3 className="text-black mb-2 text-xl font-bold ">Analyze</h3>
-                <p className="text-black ">
-                  When executing a project,we analyze it periodically. Failing
-                  to do so, would mean unexpected challenges, overlooked
-                  critical information, or flaws in the work process that
-                  manifest as the project unfolds.
-                </p>
-              </div>
-              <div>
-                <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                  <img src={socialicon} alt="socialicon" />
-                </div>
-                <h3 className="text-black mb-2 text-xl font-bold ">
-                  Social Media Presents
-                </h3>
-                <p className="text-black ">
-                  A company's social media presence is how they portray
-                  themselves online through their social networking accounts and
-                  activity. Building a social media presence starts with
-                  developing your goals.
-                </p>
-              </div>
-              <div>
-                <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                  <img src={financeicon} alt="financeicon" />
-                </div>
-                <h3 className="text-black mb-2 text-xl font-bold ">Finance</h3>
-                <p className="text-black ">
-                  the funding of long-term projects, such as public
-                  infrastructure or services, industrial projects, and others
-                  through a specific financial structure.
-                </p>
-              </div>
-              <div>
-                <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                  <img src={statergyicon} alt="statergyicon" />
-                </div>
-                <h3 className="text-black mb-2 text-xl font-bold ">Strategy</h3>
-                <p className="text-black ">
-                  Craft beautiful, delightful experiences for both marketing and
-                  product with real cross-company collaboration.
-                </p>
-              </div>
-              <div>
-                <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                  <img src={businessreporticon} alt="businessreporticon" />
-                </div>
-                <h3 className="text-black mb-2 text-xl font-bold ">
-                  Business Report
-                </h3>
-                <p className="text-black ">
-                  At the end of every project we present our clients with
-                  detailed reports .which can help them understand what we did
-                  for there project.
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -237,7 +211,7 @@ const Home = () => {
                 <div className="w-full space-y-12 lg:w-1/2 ">
                   <div>
                     <h2 className="text-3xl font-semibold text-white capitalize lg:text-4xl ">
-                      explore our <br /> Resources for our community
+                    APPLICATION GUIDELINES
                     </h2>
                     <div className="mt-2">
                       <span className="inline-block w-40 h-1 rounded-full bg-pink-500" />
@@ -264,80 +238,19 @@ const Home = () => {
                     </span>
                     <div className="mt-4 md:mx-4 md:mt-0">
                       <h2 className="text-2xl font-semibold text-white capitalize ">
-                        Custom CRM
+                      <li>You do not need Professional Photographs to apply.</li>
+                      <li>No selfies , Please ask a friend to help you.</li>
+              <li>No sunglasses or hats.</li>
+              <li>No or minimal make-up and no filters.</li>
+              <li>Try to use natural light.</li>
+              <li>Photographs must be in color and in focus.</li>
+              <li>Please try to upload at least one full length and one close up picture.</li>
+              <p className="text-sm pt-5">Once you have made your application, we will do our best to get back to you within five working days. If you have not heard back from us, please call us and quote your full name and email address.</p>
+              <p className="text-sm">While your waiting to hear back,keep up to date with ILAHE by following us on social media.</p>
                       </h2>
-                      <p className="mt-3 text-white ">
-                        Customer relationship management (CRM) is a technology
-                        for managing all your company's relationships and
-                        interactions with customers and potential customers. The
-                        goal is simple: Improve business relationships.
-                      </p>
                     </div>
                   </div>
-                  <div className="md:flex md:items-start md:-mx-4">
-                    <span className="inline-block p-2 text-white bg-pink-500 rounded-xl md:mx-4 ">
-                      <svg
-                        xmlns="https://www.w3.org/2000/svg"
-                        className="w-6 h-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-                        />
-                      </svg>
-                    </span>
-                    <div className="mt-4 md:mx-4 md:mt-0">
-                      <h2 className="text-2xl font-semibold text-white capitalize ">
-                        Google Data Maps Mining
-                      </h2>
-                      <p className="mt-3 text-white ">
-                        Data mapping is crucial to the success of many data
-                        processes. One misstep in data mapping can ripple
-                        throughout your organization, leading to replicated
-                        errors, and ultimately, to inaccurate analysis.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="md:flex md:items-start md:-mx-4">
-                    <span className="inline-block p-2 text-white  bg-pink-500 rounded-xl md:mx-4 ">
-                      <svg
-                        xmlns="https://www.w3.org/2000/svg"
-                        className="w-6 h-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"
-                        />
-                      </svg>
-                    </span>
-                    <div className="mt-4 md:mx-4 md:mt-0">
-                      <h2 className="text-2xl font-semibold text-white capitalize">
-                        Custom Testing Tools
-                      </h2>
-                      <p className="mt-3 text-white ">
-                        Testing Tools in software testing can be defined as
-                        products that support various test activities starting
-                        from planning, requirement gathering, build creation,
-                        test execution, defect logging and test analysis.
-                      </p>
-                    </div>
-                  </div>
+                 
                 </div>
                 <div className="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
                   <img
@@ -520,14 +433,16 @@ const Home = () => {
                 FAQ
               </button>
             </Link>
-            <Link to="/contactus">
-              <button className="text-xs sm:text-sm transform rounded border border-slate-200 px-14 py-2 font-medium text-black transition-colors hover:bg-slate-50 hover:text-black">
+ 
+              <a href={`tel:${GlobalData.company.companyPhone}`} className="text-xs sm:text-sm transform rounded border border-slate-200 px-14 py-2 font-medium text-black transition-colors hover:bg-slate-50 hover:text-black">
                 Contact us
-              </button>
-            </Link>
+              </a>
+   
           </div>
         </section>
       </main>
+      {/*        <a href={`tel:${GlobalData.company.companyPhone}`}></a>
+<a href={`mailto:${GlobalData.company.companyEmail}`}></a> */}
     </>
   );
 };

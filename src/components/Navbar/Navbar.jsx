@@ -73,7 +73,7 @@ const Navbar = () => {
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
-                          <Link to="/contactus">
+                          <Link to="/best-Finishing-school-in-india">
                             <a
                               className={classNames(
                                 active

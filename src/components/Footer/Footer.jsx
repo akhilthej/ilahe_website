@@ -5,6 +5,7 @@ import Subscribe from '../../assets/Icons/Subscribe.png'
 import {googlereview} from '../data/data.jsx';
 import footer_csd from './csdv2Logofooter.svg';
 import WhatsApp from './WhatsApp.webp';
+import { GlobalData } from '../data/GlobalData.js';
 
 const Footer = () => {
   
@@ -157,7 +158,7 @@ const Footer = () => {
               {" "}
               Clients{" "}
             </a>
-            <a href="https://search.google.com/local/writereview?placeid=ChIJM0IEPqRRmg0RyLQAP_5varc">
+            <a href={GlobalData.company.companyGoogleMaps}>
               {" "}
               Google Map Review{" "}
             </a>
@@ -189,7 +190,7 @@ const Footer = () => {
               {" "}
               FAQs{" "}
             </a>
-            <a  href="https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20looking%20some%20information.">
+            <a  href={GlobalData.company.companyWhatsapp}>
               {" "}
               Live Chat{" "}
             </a>
@@ -225,7 +226,7 @@ const Footer = () => {
       </div>
     </div>
 
-    <a href="https://g.page/r/Cbdbq2SKZJyVEAI/review"> <img  class="h-10 hover:animate-pulse  max-w-full ml-auto mr-auto mt-5" src= {googlereview} alt="googlereview_icon" /></a>
+    <a href={GlobalData.company.companyGoogleMaps}> <img  class="h-10 hover:animate-pulse  max-w-full ml-auto mr-auto mt-5" src= {googlereview} alt="googlereview_icon" /></a>
  
     <div class="h-px my-8 border-0 bg-gray-700"/>
    <p id="copyright" class="cursor-default text-center text-xs text-white">© 2022-<span id="currentYear">2023</span> ilahe.in</p><br/>
@@ -243,7 +244,7 @@ const Footer = () => {
     <div>
      
      <a title="Whatsapp"
-        href="https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20looking%20some%20information."
+        href={GlobalData.company.companyWhatsapp}
         target="_blank"
         className=" block w-12 rounded-full transition-all  transform hover:scale-110 hover:rotate-12"> 
         <img className=" object-cover object-center sm:w-12 pb-5"

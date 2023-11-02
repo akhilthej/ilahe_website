@@ -69,7 +69,7 @@ const Modeling = () => {
 
         <ModelingPriceTable />
         
- {/*Whatdowedo */}
+ {/*Who is it for? */}
  <section>
           <div className="cursor-default px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div className="max-w-screen-md mb-8 lg:mb-16">
@@ -127,8 +127,7 @@ const Modeling = () => {
           </div>
         </section>
       
-{/*        <a href={`tel:${GlobalData.company.companyPhone}`}></a>
-<a href={`mailto:${GlobalData.company.companyEmail}`}></a> */}
+
 
    </div>
   )
