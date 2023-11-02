@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 
 import F_cover from './F_Cover.png'
 
+import lvlexpert from '../Modeling/lvlexpert-mobeling-1.webp'
+import lvlelit from '../Modeling/lvlelirt-mobeling.webp'
+import lvlbasic from '../Modeling/lvlbasic-modeling-1.webp'
+
+
 import FinishingPriceTable from '../../../components/PriceTables/FinishingSchool/FinishingPriceTable'
 
 const FinishingSchool = () => {
@@ -69,6 +74,55 @@ const FinishingSchool = () => {
 
 
         <FinishingPriceTable />
+
+        <section>
+  <div className="container mx-auto px-4">
+    <div className="grid gap-4 grid-cols-3">
+      {/* "Level-Basic" section */}
+      <div className="text-center">
+        <div >
+        <img src={lvlbasic} />
+          <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
+            Level-Basic
+          </h3>
+         
+          <Link to='/best-modeling-school-in-india'>
+            <button className="mt-5 text-xs sm:text-sm transform rounded bg-black border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
+          </Link>
+        </div>
+      </div>
+
+      {/* "Level-Elite" section */}
+      <div className="text-center">
+        <div>
+        <img src={lvlelit} />
+          <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
+            Level-Elite
+          </h3>
+          
+          <Link to='/best-Finishing-school-in-india'>
+          <button className="mt-5 text-xs sm:text-sm transform rounded bg-black border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
+          </Link>
+        </div>
+      </div>
+
+      {/* "Level-Expert" section */}
+      <div className="text-center">
+        <div>
+        <img src={lvlexpert} />
+          <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
+            Level-Expert
+          </h3>
+          
+          <Link to='/best-Finishing-school-in-india'>
+          <button className="mt-5 text-xs sm:text-sm transform rounded bg-black border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
  {/*Whatdowedo */}
  <section>
           <div className="cursor-default px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
