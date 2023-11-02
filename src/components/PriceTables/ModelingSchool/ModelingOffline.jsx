@@ -69,13 +69,13 @@ const ModelingPriceTableOffline = () => {
               </ul>
             </div>
             <div className="block flex items-center p-8  uppercase">
-              <button
+            <a href='/best-modeling-school-in-basic'
                 className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
+	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
               >
                 Select
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -119,13 +119,13 @@ const ModelingPriceTableOffline = () => {
             </ul>
           </div>
           <div className="block flex items-center p-8  uppercase">
-            <button
-              className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
+          <a href='/best-modeling-school-in-expert'
+                className="mt-3 text-lg font-semibold 
+	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
-            >
-              Select
-            </button>
+              >
+                Select
+              </a>
           </div>
         </div>
         <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
@@ -164,13 +164,13 @@ const ModelingPriceTableOffline = () => {
               </ul>
             </div>
             <div className="block flex items-center p-8  uppercase">
-              <button
+            <a href='/best-modeling-school-in-elite'
                 className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
+	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
               >
                 Select
-              </button>
+              </a>
             </div>
           </div>
         </div>

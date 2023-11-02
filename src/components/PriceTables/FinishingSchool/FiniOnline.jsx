@@ -20,7 +20,7 @@ const FinishingPriceTable = () => {
           <div className="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
             <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
               <h1 className="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
-                Online 3 Days
+                Basic <br/>Online 3 Days
               </h1>
               <h2 className="text-sm text-gray-500 text-center pb-6">2499 INR</h2>
               Stripe offers everything needed to run an online business at
@@ -88,7 +88,7 @@ const FinishingPriceTable = () => {
           </div>
           <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
             <h1 className="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
-              Online 15 Days
+            Expert <br/>Online 15 Days
             </h1>
             <h2 className="text-sm text-gray-500 text-center pb-6">
               <span className="text-3xl">15999 INR</span>
@@ -122,7 +122,7 @@ const FinishingPriceTable = () => {
             </ul>
           </div>
           <div className="block flex items-center p-8  uppercase">
-          <a href='/best-Finishing-school-basic'
+          <a href='/best-Finishing-school-expert'
                 className="mt-3 text-lg font-semibold 
 	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
@@ -135,7 +135,7 @@ const FinishingPriceTable = () => {
           <div className="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
             <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
               <h1 className="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
-                Online 7 Days
+              Elite <br/>Online 7 Days
               </h1>
               <h2 className="text-sm text-gray-500 text-center pb-6">
                 7499 INR
@@ -167,7 +167,7 @@ const FinishingPriceTable = () => {
               </ul>
             </div>
             <div className="block flex items-center p-8  uppercase">
-            <a href='/best-Finishing-school-basic'
+            <a href='/best-Finishing-school-elite'
                 className="mt-3 text-lg font-semibold 
 	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"

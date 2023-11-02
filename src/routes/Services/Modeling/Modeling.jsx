@@ -12,7 +12,7 @@ const Modeling = () => {
   return (
     <div>
      {/* Title Card */}
-     <section className="py-20 sm:py-40" style={{ backgroundImage: `url(${GlobalData.Coverimages.ModelingCover})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
+     <section className="py-20 sm:py-40" style={{ backgroundImage: `url(${GlobalData.Coverimages.ModelingCover})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
      <div className="flex flex-col items-center md:flex-row justify-center">
        <div className="md:w-1/2 md:pr-10">
         
@@ -82,7 +82,7 @@ const Modeling = () => {
             Level-Basic
           </h3>
          
-          <Link to='/best-modeling-school-in-india'>
+          <Link to='/best-modeling-school-in-basic'>
             <button className="mt-5 text-xs sm:text-sm transform rounded bg-black border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
           </Link>
         </div>
@@ -96,7 +96,7 @@ const Modeling = () => {
             Level-Elite
           </h3>
           
-          <Link to='/best-Finishing-school-in-india'>
+          <Link to='/best-modeling-school-in-elite'>
           <button className="mt-5 text-xs sm:text-sm transform rounded bg-black border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
           </Link>
         </div>
@@ -110,7 +110,7 @@ const Modeling = () => {
             Level-Expert
           </h3>
           
-          <Link to='/best-Finishing-school-in-india'>
+          <Link to='/best-modeling-school-in-expert'>
           <button className="mt-5 text-xs sm:text-sm transform rounded bg-black border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
           </Link>
         </div>

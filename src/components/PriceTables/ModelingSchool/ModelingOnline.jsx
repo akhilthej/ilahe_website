@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const ModelingPriceTable = () => {
+const ModelingPriceTableOnline = () => {
   return (
     <main>
 
@@ -10,7 +11,7 @@ const ModelingPriceTable = () => {
       Pricing
     </h1>
     <p className="text-center text-lg text-gray-700 mt-2 px-6">
-    The following prices are independent.
+      The following prices are independent.
     </p>
     <div className="h-1 mx-auto bg-indigo-200 w-24 opacity-75 mt-4 rounded" />
     <div className="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
@@ -19,7 +20,7 @@ const ModelingPriceTable = () => {
           <div className="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
             <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
               <h1 className="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
-                Online 3 Days
+                Basic <br/>Online 3 Days
               </h1>
               <h2 className="text-sm text-gray-500 text-center pb-6">2499 INR</h2>
               Stripe offers everything needed to run an online business at
@@ -69,13 +70,15 @@ const ModelingPriceTable = () => {
               </ul>
             </div>
             <div className="block flex items-center p-8  uppercase">
-              <button
+           
+              <a href='/best-modeling-school-in-basic'
                 className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
+	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
               >
                 Select
-              </button>
+              </a>
+
             </div>
           </div>
         </div>
@@ -85,7 +88,7 @@ const ModelingPriceTable = () => {
           </div>
           <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
             <h1 className="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
-              Online 15 Days
+            Expert <br/>Online 15 Days
             </h1>
             <h2 className="text-sm text-gray-500 text-center pb-6">
               <span className="text-3xl">15999 INR</span>
@@ -119,20 +122,20 @@ const ModelingPriceTable = () => {
             </ul>
           </div>
           <div className="block flex items-center p-8  uppercase">
-            <button
-              className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
+          <a href='/best-modeling-school-in-expert'
+                className="mt-3 text-lg font-semibold 
+	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
-            >
-              Select
-            </button>
+              >
+                Select
+              </a>
           </div>
         </div>
         <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
           <div className="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
             <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
               <h1 className="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
-                Online 7 Days
+              Elite <br/>Online 7 Days
               </h1>
               <h2 className="text-sm text-gray-500 text-center pb-6">
                 7499 INR
@@ -164,13 +167,13 @@ const ModelingPriceTable = () => {
               </ul>
             </div>
             <div className="block flex items-center p-8  uppercase">
-              <button
+            <a href='/best-modeling-school-in-elite'
                 className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
+	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
               >
                 Select
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -184,4 +187,4 @@ const ModelingPriceTable = () => {
   )
 }
 
-export default ModelingPriceTable
+export default ModelingPriceTableOnline

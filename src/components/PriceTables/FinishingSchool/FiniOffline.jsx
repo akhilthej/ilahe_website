@@ -19,7 +19,7 @@ const FinishingPriceTableOffline = () => {
           <div className="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
             <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
               <h1 className="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
-               Offline 3 Days
+              Basic <br/> Offline 3 Days
               </h1>
               <h2 className="text-sm text-gray-500 text-center pb-6">4999 INR</h2>
               Stripe offers everything needed to run an online business at
@@ -69,13 +69,13 @@ const FinishingPriceTableOffline = () => {
               </ul>
             </div>
             <div className="block flex items-center p-8  uppercase">
-              <button
+            <a href='/best-Finishing-school-basic'
                 className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
+	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
               >
                 Select
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ const FinishingPriceTableOffline = () => {
           </div>
           <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
             <h1 className="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
-            Offline 15 Days
+            Expert <br/>Offline 15 Days
             </h1>
             <h2 className="text-sm text-gray-500 text-center pb-6">
               <span className="text-3xl">24999 INR</span>
@@ -119,20 +119,20 @@ const FinishingPriceTableOffline = () => {
             </ul>
           </div>
           <div className="block flex items-center p-8  uppercase">
-            <button
-              className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
+          <a href='/best-Finishing-school-expert'
+                className="mt-3 text-lg font-semibold 
+	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
-            >
-              Select
-            </button>
+              >
+                Select
+              </a>
           </div>
         </div>
         <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
           <div className="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
             <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
               <h1 className="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
-              Offline 7 Days
+              Elite <br/> Offline 7 Days
               </h1>
               <h2 className="text-sm text-gray-500 text-center pb-6">
               9999 INR
@@ -164,13 +164,13 @@ const FinishingPriceTableOffline = () => {
               </ul>
             </div>
             <div className="block flex items-center p-8  uppercase">
-              <button
+            <a href='/best-Finishing-school-elite'
                 className="mt-3 text-lg font-semibold 
-	bg-black w-full text-white rounded-lg 
+	bg-black w-full text-white rounded-lg text-center
 	px-6 py-3 block shadow-xl hover:bg-gray-700"
               >
                 Select
-              </button>
+              </a>
             </div>
           </div>
         </div>

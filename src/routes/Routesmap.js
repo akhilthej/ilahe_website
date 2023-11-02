@@ -15,9 +15,14 @@ import Home from './HOME';
 
 
 import Modeling from "./Services/Modeling/Modeling";
+import ModelingBasicService from './Services/Modeling/ModelingBasicService'
+import ModelingEliteService from './Services/Modeling/ModelingEliteService' 
+import ModelingExpert from './Services/Modeling/ModelingExpert'
+
 import FinishingSchool from "./Services/FinishingSchool/FinishingSchool";
 import FinishingBasicService from './Services/FinishingSchool/FinishingBasicService'
-
+import FinishingEliteService from './Services/FinishingSchool/FinishingEliteService' 
+import FinishingExpert from './Services/FinishingSchool/FinishingExpert'
 
 import Blogs from './BLOGS';
 
@@ -40,7 +45,7 @@ Blogs,Reviews,Aboutus,Contactus,
 ReturnPolicy,
 
 /*Services */
-Modeling,
-FinishingSchool,FinishingBasicService,
+Modeling,ModelingBasicService,ModelingEliteService,ModelingExpert,
+FinishingSchool,FinishingBasicService,FinishingEliteService,FinishingExpert,
 
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import Aboutcoverimage from '../assets/CoverImages/AboutCoverImage.webp'
+import { GlobalData } from '../components/data/GlobalData';
 import About2 from '../assets/CoverImages/About2.png'
 import About3 from '../assets/CoverImages/About3.jpg'
 
@@ -20,7 +20,7 @@ const Aboutus = () => {
      <section
   className="py-10 sm:py-48"
   style={{
-    backgroundImage: `url(${Aboutcoverimage})`,
+    backgroundImage: `url(${GlobalData.Coverimages.AboutCover})`,
     backgroundSize: "cover",
     backgroundPosition: "top",
   }}>
@@ -31,10 +31,10 @@ const Aboutus = () => {
             <div className="text-right md:text-left">
               {" "}
               {/* Align titles to the right on mobile, left on larger screens */}
-              <h3 className="cursor-default  text-2xl pb-5 md:text-6xl fade-in-down font-extrabold text-center text-white tracking-tight">
+              <h3 className="cursor-default  text-2xl pb-5 md:text-6xl fade-in-down font-extrabold text-center text-yellow-500 tracking-tight">
                 Know More About ilahe
               </h3>
-              <p className="cursor-default text-white sm:text-sm text-xs text-center sm:ml-0">
+              <p className="cursor-default text-yellow-600 sm:text-sm text-xs text-center sm:ml-0">
                 Get-in-Touch
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4">
