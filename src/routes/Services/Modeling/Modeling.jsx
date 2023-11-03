@@ -51,11 +51,11 @@ const Modeling = () => {
           <div className="mx-auto max-w-[55rem]">
             <div className="text-center">
               <p className="cursor-default text-xl sm:text-4xl font-extrabold  text-gray-900">
-              WHAT IS FINISHING SCHOOL ?
+              WHAT IS Modling School ?
               </p>
 
               <p className="cursor-default text-sm sm:text-xl pt-5  text-gray-900">
-              “A finishing school, such as ILAHE, focuses on training students in overall personality development and cultural and social activities. Our goal is to motivate and educate individuals in developing the right attitude, which is crucial for achieving growth and success later in life. Through our efforts, we aim to develop the personality traits of our students and bridge any skill gaps that may hinder them from seeking employment in various sectors. Our initiative is to create a new culture in India where all youth have equal opportunities to succeed and contribute to building a better nation and brighter future.”
+              “A Modeling school, such as ILAHE, focuses on training students in overall personality development and cultural and social activities. Our goal is to motivate and educate individuals in developing the right attitude, which is crucial for achieving growth and success later in life. Through our efforts, we aim to develop the personality traits of our students and bridge any skill gaps that may hinder them from seeking employment in various sectors. Our initiative is to create a new culture in India where all youth have equal opportunities to succeed and contribute to building a better nation and brighter future.”
               </p>
             </div>
             <div className="mt-6 flex items-center justify-center gap-4 flex-wrap"></div>

@@ -62,6 +62,7 @@ const Home = () => {
             width="80%"
             height="auto"
             autoPlay
+            controls
             playsInline
             preload="metadata" 
           >
@@ -74,11 +75,11 @@ const Home = () => {
           <div className="mx-auto max-w-[55rem]">
             <div className="text-center">
               <p className="cursor-default text-sm sm:text-4xl font-extrabold  text-gray-900">
-                Your Vision, Our Code – Perfectly Executed.
+              Polishing Dreams, Shaping Futures – Your Confidence, Our Commitment.
               </p>
 
               <p className="cursor-default text-sm sm:text-xl pt-5  text-gray-900">
-                Unlocking the Full Potential of Your Online Brand.
+              Empowering Lives, One Stride at a Time.
               </p>
             </div>
             <div className="mt-6 flex items-center justify-center gap-4 flex-wrap"></div>
@@ -119,10 +120,10 @@ const Home = () => {
   <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
     <div style={{ backgroundImage: 'url("https://drive.google.com/uc?id=11NXjq2_6_yas4Hi8C3h8_V79PLb-9FzR")', backgroundSize: 'cover', backgroundPosition: 'left' }} className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
       <h3 className="text-lg leading-normal mb-2 font-semibold text-white">
-        Modeling School
+      Modeling school
       </h3>
       <p className="text-gray-200 text-sm">
-        Catalyzing Business Success: Our business website solutions are designed to drive growth, enhance visibility, and boost profitability in the digital landscape.
+      skills, confidence, professionalism.
       </p>
       <Link to='/best-modeling-school-in-india'>
         <button className="mt-5 text-xs sm:text-sm transform rounded bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">Get Quotation</button>
@@ -134,10 +135,10 @@ const Home = () => {
   <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
     <div style={{ backgroundImage: 'url("https://drive.google.com/uc?id=11NXjq2_6_yas4Hi8C3h8_V79PLb-9FzR")', backgroundSize: 'cover', backgroundPosition: 'left' }} className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
       <h3 className="text-lg leading-normal mb-2 font-semibold text-white">
-      Finishing School
+      Finishing school
       </h3>
       <p className="text-gray-200 text-sm">
-        Catalyzing Business Success: Our business website solutions are designed to drive growth, enhance visibility, and boost profitability in the digital landscape.
+      etiquette, grooming, self-confidence , communication
       </p>
       <Link to='/best-Finishing-school-in-india'>
         <button className="mt-5 text-xs sm:text-sm transform rounded bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">Get Quotation</button>
@@ -274,11 +275,11 @@ const Home = () => {
 
             <section className="text-center mx-auto mb-12 lg:px-20">
               <h2 className="pb-2 font-extrabold text-transparent text-2xl md:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3 ">
-                Line of Engagement
+              Unlock Your Potential Online
               </h2>
               <p className="text-sm font-medium text-black">
-                Streamline the management of advertising and content for your
-                business, saving you valuable time.
+              Navigating the digital world is vital for modeling and finishing school, and Ilahe understands this. Our website development services ensure your online presence is not only visually appealing but also strategically optimized. Here's how joining Ilahe Modeling and Finishing School benefits you:
+
               </p>
             </section>
 
@@ -305,11 +306,11 @@ const Home = () => {
                     />
                   </div>
                   <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                    Fixed Price Model
+                  Personalized Growth
                   </h3>
                   <p className="text-gray-500 text-sm">
-                    Under this model, the web development company and the client
-                    agree on a fixed price for the entire project scope.
+                  At Ilahe, we tailor our training to your unique strengths, helping you refine your skills, boost your confidence, and carve your path in the modeling industry. Our personalized approach ensures you develop as an individual, both personally and professionally.
+
                   </p>
                 </div>
               </div>
@@ -338,11 +339,11 @@ const Home = () => {
                     />
                   </div>
                   <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                    Time and Materials Model
+                  Industry-Relevant Training
                   </h3>
                   <p className="text-gray-500 text-sm">
-                    The client pays based on the time and resources spent on the
-                    project.
+                  Ilahe provides hands-on experience and industry insights, preparing you for the demands of the modeling and finishing world. Our expert trainers impart knowledge that aligns with current trends and industry expectations, giving you a competitive edge.
+
                   </p>
                 </div>
               </div>
@@ -371,11 +372,11 @@ const Home = () => {
                     />
                   </div>
                   <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                    On-Time Delivery
+                  Professional Development
                   </h3>
                   <p className="text-gray-500 text-sm">
-                    The web development company commits to delivering projects
-                    on or before agreed-upon deadlines.
+                  Beyond modeling techniques, we focus on grooming, etiquette, and effective communication. Ilahe equips you with the tools to present yourself professionally, whether on the runway or in a boardroom. Our training extends beyond the surface, fostering holistic growth.
+
                   </p>
                 </div>
               </div>
@@ -404,12 +405,11 @@ const Home = () => {
                     />
                   </div>
                   <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                    Hiring Model
+                  Supportive Community
                   </h3>
                   <p className="text-gray-500 text-sm">
-                    if your project requires additional manpower and extra
-                    resources, we're ready to scale up and bring in the
-                    necessary talent to meet your needs.
+                  Joining Ilahe means becoming part of a supportive community. Connect with fellow aspiring models and individuals who share your dreams and aspirations. Our network becomes your foundation, offering encouragement, mentorship, and lifelong friendships, enhancing your modeling journey.
+
                   </p>
                 </div>
               </div>
@@ -423,8 +423,7 @@ const Home = () => {
             Need Help ?
           </h2>
           <p className="cursor-default text-sm font-medium text-black mt-5 mb-10">
-            Explore our comprehensive documentation for more information on our
-            services.
+          By choosing Ilahe Modeling and Finishing School, you invest in more than just a training program – you invest in a transformative experience that propels you towards a successful and fulfilling career in the world of modeling and finishing.
           </p>
 
           <div className="flex items-center justify-center gap-4 flex-wrap">
