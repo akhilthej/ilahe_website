@@ -8,9 +8,20 @@ import lvlexpert from './lvlexpert-mobeling-1.webp'
 import lvlelit from './lvlelirt-mobeling.webp'
 import lvlbasic from './lvlbasic-modeling-1.webp'
 
+import { Helmet } from "react-helmet-async";
+
+
 const Modeling = () => {
   return (
     <div>
+      <Helmet>
+        <title>Modeling School - ilahe</title>
+        <meta
+          name="description"
+          content="Discover the top modeling and finishing school to refine your skills, boost your confidence, and embark on a successful modeling career."
+        />
+        <link rel="canonical" href="/contactus" />
+      </Helmet>
      {/* Title Card */}
      <section className="py-20 sm:py-40" style={{ backgroundImage: `url(${GlobalData.Coverimages.ModelingCover})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
      <div className="flex flex-col items-center md:flex-row justify-center">

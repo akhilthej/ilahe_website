@@ -10,7 +10,7 @@ const Aboutus = () => {
     <main >
       <Helmet>
             <title>About Us ilahe</title>
-            <meta name="description" content='Know more about our Company and our team Cyber Space Digital.'/>
+            <meta name="description" content='Discover the top modeling and finishing school to refine your skills, boost your confidence, and embark on a successful modeling career.'/>
             <link rel="canonical" href="/aboutus" />
       </Helmet>
     

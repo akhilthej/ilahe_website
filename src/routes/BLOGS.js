@@ -8,9 +8,9 @@ const TECHNOLOGIES = () => {
   return (
     <div className='Technologies'>
       <Helmet>
-                <title>Cyber Space Digital - Blogs</title>
-                <meta name="description" content='Cyberspacedigital, Technologies we deal with to full fill your digital needs. Our research will be posted below.'/>
-                <link rel="canonical" href="/technologies" />
+                <title>ilahe - Blogs</title>
+                <meta name="description" content='Discover the top modeling and finishing school to refine your skills, boost your confidence, and embark on a successful modeling career.'/>
+                <link rel="canonical" href="/blog" />
       </Helmet>
     
 <main>

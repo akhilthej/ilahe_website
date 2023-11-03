@@ -10,9 +10,9 @@ const Reviews = () => {
   return (
     <div className='Reviews'>
       <Helmet>
-                <title>Cyber Space Digital - Reviews</title>
-                <meta name="description" content='Web Development and Digital Marketing Company. We are here to build you business online. One stop for all your digital needs.'/>
-                <link rel="canonical" href="/technologies" />
+                <title>ilahe - Reviews</title>
+                <meta name="description" content='Discover the top modeling and finishing school to refine your skills, boost your confidence, and embark on a successful modeling career.'/>
+                <link rel="canonical" href="/reviews" />
       </Helmet>
     
 

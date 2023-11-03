@@ -30,7 +30,7 @@ const CONTACTUS = () => {
         <title>Contact us</title>
         <meta
           name="description"
-          content="Web Development and Digital Marketing Company. We are here to build you business online. One stop for all your digital needs."
+          content="Discover the top modeling and finishing school to refine your skills, boost your confidence, and embark on a successful modeling career."
         />
         <link rel="canonical" href="/contactus" />
       </Helmet>
