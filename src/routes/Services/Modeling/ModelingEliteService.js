@@ -38,6 +38,7 @@ const EliteModeling = () => {
             Apply
           </a>
         </div>
+        
       </div>
     </div>
   );

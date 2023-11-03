@@ -51,7 +51,7 @@ const Modeling = () => {
           <div className="mx-auto max-w-[55rem]">
             <div className="text-center">
               <p className="cursor-default text-xl sm:text-4xl font-extrabold  text-gray-900">
-              WHAT IS Modling School ?
+              WHAT IS Modeling School ?
               </p>
 
               <p className="cursor-default text-sm sm:text-xl pt-5  text-gray-900">

@@ -116,39 +116,40 @@ const Home = () => {
       </p>
     </section>
 
-
 {/* "Modeling" section */}
 <div className="flex flex-wrap justify-center -mx-4 text-center">
-<div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
-    <div style={{ backgroundImage: `url(${ModelingImage})`, backgroundSize: 'cover', backgroundPosition: 'top' }} className="py-16 shadow-lg px-16 mb-2 bg-gray-50 border-b border-gray-100 ">
-      <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-      Modeling school
-      </h3>
-      <p className="text-gray-200 text-sm">
-      Elevate Your Modeling School’s Presence: Our tailored website solutions are crafted to amplify your brand, increase visibility, and attract more opportunities in the modeling industry. Get a quote today and step confidently into the digital spotlight!
-      </p>
-      <Link to='/best-modeling-school-in-india'>
-        <button className="mt-5 text-xs sm:text-sm transform rounded bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">Get Quotation</button>
-      </Link>
+  <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
+    <div className="flex justify-center items-center">
+      <div style={{ backgroundImage: `url(${ModelingImage})`, backgroundSize: 'cover', backgroundPosition: 'top', width: '200px', height: '200px' }} className="py-16 shadow-lg px-16 mb-2 bg-gray-50 border-b border-gray-100"></div>
     </div>
+    <h3 className="text-lg leading-normal mb-2 font-bold text-black">
+      Modeling school
+    </h3>
+    <p className="font-semibold text-sm text-white bg-orange-600 p-5 drop-shadow-lg rounded-lg">
+      Elevate Your Modeling School’s Presence: Our tailored website solutions are crafted to amplify your brand, increase visibility, and attract more opportunities in the modeling industry. Get a quote today and step confidently into the digital spotlight!
+    </p>
+    <Link to='/best-modeling-school-in-india'>
+      <button className="mt-5 text-xs sm:text-sm transform rounded  bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
+    </Link>
   </div>
-
 
   {/* "Finishing" section */}
   <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
-    <div style={{ backgroundImage: `url(${ModelingImage})`, backgroundSize: 'cover', backgroundPosition: 'top' }} className="py-16 shadow-lg px-16 mb-2 bg-gray-50 border-b border-gray-100 ">
-      <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-      Finishing school
-      </h3>
-      <p className="text-gray-200 text-sm">
-      Polish Your Presence Online: Our tailored websites add a touch of class to your finishing school! Boost elegance, increase visibility, and charm a refined audience. Get a quote now and let your finishing school shine online with grace and style!
-      </p>
-      <Link to='/best-Finishing-school-in-india'>
-        <button className="mt-5 text-xs sm:text-sm transform rounded bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">Get Quotation</button>
-      </Link>
+    <div className="flex justify-center items-center">
+      <div style={{ backgroundImage: `url(${ModelingImage})`, backgroundSize: 'cover', backgroundPosition: 'top', width: '200px', height: '200px' }} className="py-16 shadow-lg px-16 mb-2 bg-gray-50 border-b border-gray-100"></div>
     </div>
+    <h3 className="text-lg leading-normal mb-2 font-bold text-black">
+      Finishing school
+    </h3>
+    <p className="font-semibold text-sm text-white bg-yellow-500 p-5 drop-shadow-lg rounded-lg">
+      Polish Your Presence Online: Our tailored websites add a touch of class to your finishing school! Boost elegance, increase visibility, and charm a refined audience. Get a quote now and let your finishing school shine online with grace and style!
+    </p>
+    <Link to='/best-Finishing-school-in-india'>
+      <button className="mt-5 text-xs sm:text-sm transform rounded bg-orange-600 border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
+    </Link>
   </div>
 </div>
+
 
 </div>
 </section>

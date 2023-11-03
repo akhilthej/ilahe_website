@@ -71,9 +71,7 @@ const HamburgerMenu = () => {
             <Link to='/blogs'><a className="text-2xl my-2" onClick={closeMenu}>
               Blogs
             </a></Link>
-            <Link to='/reviews'><a className="text-2xl my-2" onClick={closeMenu}>
-              Reviews
-            </a></Link>
+            
           </div>
         </div>
       )}
