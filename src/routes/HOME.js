@@ -5,7 +5,6 @@ import Brand_slider from "../components/Brand_slider";
 
 import { HomeVideo } from "../components/data/data";
 import ImageSlider from "../components/ImageSlider";
-import ModelingImage from './Services/Modeling/modelingimage.jpeg'
 
 import {
   FixedPrice,
@@ -108,19 +107,18 @@ const Home = () => {
     <p className="text-xl font-medium text-black">
     Explore ilahe Modeling and Finishing School's Digital Home.
       </p>
-      <h2 className="pb-2 font-extrabold text-transparent text-2xl md:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-600 ">
+      <h2 className="pb-2 font-extrabold text-transparent text-2xl md:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3  ">
       Empowering Your Journey, One Click at a Time.  
       </h2>
       <p className="text-sm font-medium text-black">
       "We make it easy for you! Ilahe offers user-friendly websites designed just for you. Whether you're a budding model or looking to refine your skills, our online platform is your go-to destination. Showcase your talent effortlessly and step confidently into the world of modeling and finishing. Your journey begins here, online, with Ilahe."
       </p>
     </section>
-
 {/* "Modeling" section */}
 <div className="flex flex-wrap justify-center -mx-4 text-center">
   <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
     <div className="flex justify-center items-center">
-      <div style={{ backgroundImage: `url(${ModelingImage})`, backgroundSize: 'cover', backgroundPosition: 'top', width: '200px', height: '200px' }} className="py-16 shadow-lg px-16 mb-2 bg-gray-50 border-b border-gray-100"></div>
+      <div style={{ backgroundImage: `url('https://drive.google.com/uc?id=18cRPgqsw0b9k1ahK4km_F3yENEEZ3XA6')`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', paddingTop: '100%' }} className="shadow-lg mb-2 bg-gray-50 border-b border-gray-100"></div>
     </div>
     <h3 className="text-lg leading-normal mb-2 font-bold text-black">
       Modeling school
@@ -129,14 +127,14 @@ const Home = () => {
       Elevate Your Modeling School’s Presence: Our tailored website solutions are crafted to amplify your brand, increase visibility, and attract more opportunities in the modeling industry. Get a quote today and step confidently into the digital spotlight!
     </p>
     <Link to='/best-modeling-school-in-india'>
-      <button className="mt-5 text-xs sm:text-sm transform rounded  bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
+      <button className="mt-5 text-xs sm:text-sm transform rounded bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
     </Link>
   </div>
 
   {/* "Finishing" section */}
   <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
     <div className="flex justify-center items-center">
-      <div style={{ backgroundImage: `url(${ModelingImage})`, backgroundSize: 'cover', backgroundPosition: 'top', width: '200px', height: '200px' }} className="py-16 shadow-lg px-16 mb-2 bg-gray-50 border-b border-gray-100"></div>
+      <div style={{ backgroundImage: `url('https://drive.google.com/uc?id=14zSYysncdQWpp2V86ff1g9LRrvOvu6xd')`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', paddingTop: '100%' }} className="shadow-lg mb-2 bg-gray-50 border-b border-gray-100"></div>
     </div>
     <h3 className="text-lg leading-normal mb-2 font-bold text-black">
       Finishing school
@@ -150,7 +148,6 @@ const Home = () => {
   </div>
 </div>
 
-
 </div>
 </section>
 
@@ -159,7 +156,7 @@ const Home = () => {
         <section
           style={{
             backgroundImage:
-              'url("https://drive.google.com/uc?id=1YbaOxUrnvo_bq067RffGDgedztOaEMia")',
+              'url("https://drive.google.com/uc?id=1LwEvhrFdftC39JIdzJpjD7OeTKRdtJLr")',
             backgroundSize: "cover",
             backgroundPosition: "top",
           }}
@@ -201,17 +198,11 @@ const Home = () => {
           </div>
         </section>
 
+
         {/*Explore */}
-        <section
-          style={{
-            backgroundImage:
-              'url("https://drive.google.com/uc?id=17CKOf3456AJ6ZjKhbaLuKGziUWrTUrAG")',
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+        <section className="cursor-default px-6  mx-auto bg-black">
           <section>
-            <div className="cursor-default container px-6 py-10 mx-auto bg-black/60">
+            <div className="cursor-default container px-6  mx-auto bg-black">
               <div className="lg:flex lg:items-center ">
                 <div className="w-full space-y-12 lg:w-1/2 ">
                   <div>
@@ -257,10 +248,10 @@ const Home = () => {
                   </div>
                  
                 </div>
-                <div className="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
+                <div className=" lg:flex lg:items-center lg:w-1/2 lg:justify-center ">
                   <img
                     className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] "
-                    src="https://drive.google.com/uc?id=17CKOf3456AJ6ZjKhbaLuKGziUWrTUrAG"
+                    src="https://drive.google.com/uc?id=1oVnDrMzZySqJ8S6h_nu0wfw9YwyPlhrs"
                     alt=""
                   />
                 </div>
