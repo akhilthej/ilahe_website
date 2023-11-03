@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route, useLocation } from 'react-router-dom';
+import ReactGA from 'react-ga4'
 import { Navbar, Footer, PrivacyPolicy,TermsnConditions, Disclaimer, ShippingandDelivery, ReturnPolicy, Error404, Home, Aboutus, Contactus, Blogs, Reviews ,
   
   /*Services */
@@ -37,6 +38,8 @@ const routes = [
   { path: '/login', element: <Login /> },
   
 ];
+
+ReactGA.initialize('G-8QD5KXH3VB'); // Replace with your Tracking ID
 
 export function App() {
   const location = useLocation();

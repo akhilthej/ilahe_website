@@ -10,6 +10,7 @@
     "npm-check": "^6.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-ga4": "^2.1.0",
     "react-helmet-async": "^1.3.0",
     "react-onesignal": "^2.0.4",
     "react-scripts": "5.0.1",
