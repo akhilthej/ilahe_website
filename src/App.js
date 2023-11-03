@@ -4,7 +4,7 @@ import { Navbar, Footer, PrivacyPolicy,TermsnConditions, Disclaimer, Shippingand
   
   /*Services */
 Modeling,ModelingBasicService,ModelingEliteService,ModelingExpert,
-FinishingSchool,FinishingBasicService,FinishingEliteService,FinishingExpert, 
+FinishingSchool,FinishingBasicService,FinishingEliteService,FinishingExpert, Dashboard, Login, 
          } from './routes/Routesmap';
 import NavbarMobile from './components/Navbar/NavbarMobile';
 
@@ -32,6 +32,10 @@ const routes = [
   { path: '/returnpolicy', element: <ReturnPolicy /> },
   { path: '/shippingdelivery', element: <ShippingandDelivery /> },
   { path: '/disclaimer', element: <Disclaimer /> },
+
+
+  { path: '/login', element: <Login /> },
+  { path: '/dashboard', element: <Dashboard /> },
   
 ];
 
