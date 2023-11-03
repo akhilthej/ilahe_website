@@ -1,21 +1,22 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
-const Dashboard = ({ isLoggedIn }) => {
-  const navigate = useNavigate();
 
-  if (!isLoggedIn) {
-    // If not logged in, redirect to the login page or show an error message.
-    navigate('/login'); // You can replace this with an error message if needed.
-    return null;
-  }
+function Dashboard() {
+
+  const handleClick=()=>{
+    localStorage.clear();
+    window.location.reload();
+}
 
   return (
-    <div>
-      <h2>Welcome Berrifdsdsfsdfsd</h2>
-      {/* Your dashboard content goes here */}
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="bg-white p-8 rounded shadow-md w-96">
+        <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
+        <p>Welcome to the dashboard!</p>
+        <button onClick={handleClick}>Logout</button>
+      </div>
     </div>
   );
-};
+}
 
 export default Dashboard;

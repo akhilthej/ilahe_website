@@ -4202,6 +4202,11 @@ dotenv@^10.0.0:
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-10.0.0.tgz"
   integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
 
+dotenv@^16.3.1:
+  version "16.3.1"
+  resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.3.1.tgz"
+  integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
+
 duplexer@^0.1.2:
   version "0.1.2"
   resolved "https://registry.npmjs.org/duplexer/-/duplexer-0.1.2.tgz"
@@ -4225,9 +4230,9 @@ ejs@^3.1.6:
     jake "^10.8.5"
 
 electron-to-chromium@^1.4.535:
-  version "1.4.574"
-  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.574.tgz"
-  integrity sha512-bg1m8L0n02xRzx4LsTTMbBPiUd9yIR+74iPtS/Ao65CuXvhVZHP0ym1kSdDG3yHFDXqHQQBKujlN1AQ8qZnyFg==
+  version "1.4.575"
+  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.575.tgz"
+  integrity sha512-kY2BGyvgAHiX899oF6xLXSIf99bAvvdPhDoJwG77nxCSyWYuRH6e9a9a3gpXBvCs6lj4dQZJkfnW2hdKWHEISg==
 
 email-addresses@^3.0.1:
   version "3.1.0"
@@ -5130,6 +5135,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
+
+fsevents@^2.3.2, fsevents@~2.3.2:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 function-bind@^1.1.1, function-bind@^1.1.2:
   version "1.1.2"
@@ -8485,7 +8495,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.6.0, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -8663,6 +8673,11 @@ react-fast-compare@^3.2.0:
   resolved "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz"
   integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
 
+react-ga@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.npmjs.org/react-ga/-/react-ga-3.3.1.tgz"
+  integrity sha512-4Vc0W5EvXAXUN/wWyxvsAKDLLgtJ3oLmhYYssx+YzphJpejtOst6cbIHCIyF50Fdxuf5DDKqRYny24yJ2y7GFQ==
+
 react-helmet-async@^1.3.0:
   version "1.3.0"
   resolved "https://registry.npmjs.org/react-helmet-async/-/react-helmet-async-1.3.0.tgz"
@@ -8780,7 +8795,7 @@ react-slick@^0.29.0:
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
 
-"react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16 || ^17 || ^18", "react@^16.6.0 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", react@^18.2.0, "react@>= 16", "react@>= 16.8", react@>=16.8:
+"react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.6.2 || ^16.0 || ^17 || ^18", "react@^16 || ^17 || ^18", "react@^16.6.0 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", react@^18.2.0, "react@>= 16", "react@>= 16.8", react@>=16.8:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -10942,9 +10957,9 @@ yaml@^1.10.0, yaml@^1.10.2, yaml@^1.7.2:
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
 
 yaml@^2.1.1:
-  version "2.3.3"
-  resolved "https://registry.npmjs.org/yaml/-/yaml-2.3.3.tgz"
-  integrity sha512-zw0VAJxgeZ6+++/su5AFoqBbZbrEakwu+X0M5HmcwUiBL7AzcuPKjj5we4xfQLp78LkEMpD0cOnUhmgOVy3KdQ==
+  version "2.3.4"
+  resolved "https://registry.npmjs.org/yaml/-/yaml-2.3.4.tgz"
+  integrity sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==
 
 yargs-parser@^20.2.2, yargs-parser@^20.2.3:
   version "20.2.9"

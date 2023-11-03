@@ -35,7 +35,6 @@ const routes = [
 
 
   { path: '/login', element: <Login /> },
-  { path: '/dashboard', element: <Dashboard /> },
   
 ];
 
