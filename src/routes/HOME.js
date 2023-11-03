@@ -5,6 +5,7 @@ import Brand_slider from "../components/Brand_slider";
 
 import { HomeVideo } from "../components/data/data";
 import ImageSlider from "../components/ImageSlider";
+import ModelingImage from './Services/Modeling/modelingimage.jpeg'
 
 import {
   FixedPrice,
@@ -105,25 +106,26 @@ const Home = () => {
     <section className="text-center mx-auto mb-12 lg:px-20">
 
     <p className="text-xl font-medium text-black">
-        website for startup compines
+    Explore ilahe Modeling and Finishing School's Digital Home.
       </p>
       <h2 className="pb-2 font-extrabold text-transparent text-2xl md:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-600 ">
-        Build Your Web Office Online.
+      Empowering Your Journey, One Click at a Time.  
       </h2>
       <p className="text-sm font-medium text-black">
-      "Every business requires a unique website to effectively reach its customers or clients. At Cyber Space Digital, we're here to help you discover the best choices tailored to your needs."
+      "We make it easy for you! Ilahe offers user-friendly websites designed just for you. Whether you're a budding model or looking to refine your skills, our online platform is your go-to destination. Showcase your talent effortlessly and step confidently into the world of modeling and finishing. Your journey begins here, online, with Ilahe."
       </p>
     </section>
 
+
 {/* "Modeling" section */}
 <div className="flex flex-wrap justify-center -mx-4 text-center">
-  <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
-    <div style={{ backgroundImage: 'url("https://drive.google.com/uc?id=11NXjq2_6_yas4Hi8C3h8_V79PLb-9FzR")', backgroundSize: 'cover', backgroundPosition: 'left' }} className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-      <h3 className="text-lg leading-normal mb-2 font-semibold text-white">
+<div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
+    <div style={{ backgroundImage: `url(${ModelingImage})`, backgroundSize: 'cover', backgroundPosition: 'top' }} className="py-16 shadow-lg px-16 mb-2 bg-gray-50 border-b border-gray-100 ">
+      <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
       Modeling school
       </h3>
       <p className="text-gray-200 text-sm">
-      skills, confidence, professionalism.
+      Elevate Your Modeling School’s Presence: Our tailored website solutions are crafted to amplify your brand, increase visibility, and attract more opportunities in the modeling industry. Get a quote today and step confidently into the digital spotlight!
       </p>
       <Link to='/best-modeling-school-in-india'>
         <button className="mt-5 text-xs sm:text-sm transform rounded bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">Get Quotation</button>
@@ -131,14 +133,15 @@ const Home = () => {
     </div>
   </div>
 
+
   {/* "Finishing" section */}
   <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
-    <div style={{ backgroundImage: 'url("https://drive.google.com/uc?id=11NXjq2_6_yas4Hi8C3h8_V79PLb-9FzR")', backgroundSize: 'cover', backgroundPosition: 'left' }} className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-      <h3 className="text-lg leading-normal mb-2 font-semibold text-white">
+    <div style={{ backgroundImage: `url(${ModelingImage})`, backgroundSize: 'cover', backgroundPosition: 'top' }} className="py-16 shadow-lg px-16 mb-2 bg-gray-50 border-b border-gray-100 ">
+      <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
       Finishing school
       </h3>
       <p className="text-gray-200 text-sm">
-      etiquette, grooming, self-confidence , communication
+      Polish Your Presence Online: Our tailored websites add a touch of class to your finishing school! Boost elegance, increase visibility, and charm a refined audience. Get a quote now and let your finishing school shine online with grace and style!
       </p>
       <Link to='/best-Finishing-school-in-india'>
         <button className="mt-5 text-xs sm:text-sm transform rounded bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">Get Quotation</button>
@@ -162,18 +165,18 @@ const Home = () => {
         >
           <div className="cursor-default py-40 flex flex-col items-center justify-center bg-black/70">
             <div className="text-center">
-              <h2 className="font-extrabold text-transparent text-4xl md:text-5xl lg:text-8xl bg-clip-text bg-pink-400 tracking-tight ">
-              Travelling worldwide
+              <h2 className="font-extrabold text-transparent text-4xl md:text-5xl lg:text-6xl bg-clip-text bg-pink-400 tracking-tight ">
+              Embark on a journey of self-discovery with Ilahe.
               </h2>
             </div>
             <div className="text-center">
               <h2 className="font-extrabold text-transparent text-5xl md:text-5xl lg:text-5xl bg-clip-text bg-orange-600 tracking-tight ">
-              and yourwide to transform your
+              It's not just about style
               </h2>
             </div>
             <div className="text-center">
-              <h2 className="font-extrabold text-transparent text-4xl md:text-5xl lg:text-8xl bg-clip-text bg-pink-400 tracking-tight ">
-              love towards “you” in an honest and truthful way.
+              <h2 className="font-extrabold text-transparent text-4xl md:text-5xl lg:text-6xl bg-clip-text bg-pink-400 tracking-tight ">
+              it's about unveiling your true self. Let us guide you as you travel the world of confidence, grace, and authenticity.
               </h2>
             </div>
           </div>
