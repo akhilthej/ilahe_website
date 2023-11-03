@@ -32,6 +32,7 @@ const routes = [
   { path: '/returnpolicy', element: <ReturnPolicy /> },
   { path: '/shippingdelivery', element: <ShippingandDelivery /> },
   { path: '/disclaimer', element: <Disclaimer /> },
+  
 ];
 
 export function App() {

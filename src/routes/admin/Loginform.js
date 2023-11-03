@@ -1,13 +1,17 @@
-// src/Login.js
-
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
-const Login = ({ login }) => {
-  const [id, setId] = useState('');
+const Login = () => {
+  const history = useHistory();
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    login(id, password);
+    // Check the username and password (you can replace this with your authentication logic)
+    if (username === 'admin' && password === 'password') {
+      // Redirect to the dashboard page on successful login
+      history.push('/dashboard');
+    }
   };
 
   return (
@@ -15,9 +19,9 @@ const Login = ({ login }) => {
       <h2>Login</h2>
       <input
         type="text"
-        placeholder="ID"
-        value={id}
-        onChange={(e) => setId(e.target.value)}
+        placeholder="Username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
       />
       <input
         type="password"
