@@ -98,7 +98,7 @@ const Home = () => {
 
         {/* Services */}
            {/*Line of Engagement */}
- <section id="services" className="cursor-default section relative pt-10 pb-8 md:pt-16 md:pb-10">
+ <section className="cursor-default section relative pt-10 pb-8 md:pt-16 md:pb-10 bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500">
   <div className="xl:max-w-8xl mx-auto px-4">
     {/* Heading for "Line of Engagement" section */}
 
@@ -107,7 +107,7 @@ const Home = () => {
     <p className="text-xl font-medium text-black">
     Explore ilahe Modeling and Finishing School's Digital Home.
       </p>
-      <h2 className="pb-2 font-extrabold text-transparent text-2xl md:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3  ">
+      <h2 className="pb-2 font-extrabold text-white text-2xl md:text-5xl lg:text-6xl  mt-3  ">
       Empowering Your Journey, One Click at a Time.  
       </h2>
       <p className="text-sm font-medium text-black">
@@ -115,35 +115,35 @@ const Home = () => {
       </p>
     </section>
 {/* "Modeling" section */}
-<div className="flex flex-wrap justify-center -mx-4 text-center">
+<div className="flex flex-wrap justify-center -mx-4  text-center">
   <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
     <div className="flex justify-center items-center">
-      <div style={{ backgroundImage: `url('https://drive.google.com/uc?id=18cRPgqsw0b9k1ahK4km_F3yENEEZ3XA6')`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', paddingTop: '100%' }} className="shadow-lg mb-2 bg-gray-50 border-b border-gray-100"></div>
+      <div class='rounded-xl shadow-xl' style={{ backgroundImage: `url('https://drive.google.com/uc?id=18cRPgqsw0b9k1ahK4km_F3yENEEZ3XA6')`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', paddingTop: '100%' }} className="shadow-lg mb-2 bg-gray-50 border-b border-gray-100"></div>
     </div>
-    <h3 className="text-lg leading-normal mb-2 font-bold text-black">
+    <h3 className="text-lg leading-normal my-2 font-bold text-black">
       Modeling school
     </h3>
     <p className="font-semibold text-sm text-white bg-orange-600 p-5 drop-shadow-lg rounded-lg">
       Elevate Your Modeling School’s Presence: Our tailored website solutions are crafted to amplify your brand, increase visibility, and attract more opportunities in the modeling industry. Get a quote today and step confidently into the digital spotlight!
     </p>
     <Link to='/best-modeling-school-in-india'>
-      <button className="mt-5 text-xs sm:text-sm transform rounded bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
+      <button className="mt-2 text-xs sm:text-sm transform rounded bg-yellow-500 border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50 mb-10">Apply Now</button>
     </Link>
   </div>
 
   {/* "Finishing" section */}
   <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
-    <div className="flex justify-center items-center">
-      <div style={{ backgroundImage: `url('https://drive.google.com/uc?id=14zSYysncdQWpp2V86ff1g9LRrvOvu6xd')`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', paddingTop: '100%' }} className="shadow-lg mb-2 bg-gray-50 border-b border-gray-100"></div>
+    <div className=" flex justify-center items-center">
+      <div class='rounded-xl shadow-xl' style={{ backgroundImage: `url('https://drive.google.com/uc?id=14zSYysncdQWpp2V86ff1g9LRrvOvu6xd')`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', paddingTop: '100%' }} className="shadow-lg mb-2 bg-gray-50 border-b border-gray-100"></div>
     </div>
-    <h3 className="text-lg leading-normal mb-2 font-bold text-black">
+    <h3 className="text-lg leading-normal my-2 font-bold text-black">
       Finishing school
     </h3>
     <p className="font-semibold text-sm text-white bg-yellow-500 p-5 drop-shadow-lg rounded-lg">
-      Polish Your Presence Online: Our tailored websites add a touch of class to your finishing school! Boost elegance, increase visibility, and charm a refined audience. Get a quote now and let your finishing school shine online with grace and style!
+      Polish Your Presence Online:Our tailored websites add atouch of class to your finishing school! Boost elegance, increase visibility, & charm a refined audience. Get aquote now and let your finishing school shine online with grace and style!
     </p>
     <Link to='/best-Finishing-school-in-india'>
-      <button className="mt-5 text-xs sm:text-sm transform rounded bg-orange-600 border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50">Apply Now</button>
+      <button className="mt-2 text-xs sm:text-sm transform rounded bg-orange-600 border border-slate-200 px-12 py-2 font-medium text-white hover:text-black transition-colors hover:bg-slate-50 mb-10">Apply Now</button>
     </Link>
   </div>
 </div>
