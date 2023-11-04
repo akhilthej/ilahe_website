@@ -182,13 +182,17 @@ export default function App() {
                  {/*Contact Form*/}
       <div>
         <form className="form" onSubmit={(e) => Submit(e)}>
-          <input placeholder="Your Name" name="Name" type="text" /> <br/>
-          <input placeholder="Your Email" name="Email" type="text" /><br/>
-          <input placeholder="Subject" name="Subject" type="text" /><br/>
-          <input placeholder="Your Message" name="Message" type="text" /><br/>
-          <input type="submit" value="Submit" />
+        <label>Name</label><br/>
+          <input placeholder="Your Name" name="Name" type="text" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  "/> <br/>
+          <label>Email</label><br/>
+          <input placeholder="Your Email" name="Email" type="text" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  "/><br/>
+          <label>Subject</label><br/>
+          <input placeholder="Subject" name="Subject" type="text" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  "/><br/>
+          <label>Message</label><br/>
+          <input placeholder="Your Message" name="Message" type="text" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  pb-10 "/><br/>
+          <input type="submit" value="Submit" className="block p-3 w-full text-sm bg-black text-white hover:text-black  hover:bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  "/>
         </form>
-        <p>{message}</p> {/* Display the feedback message */}
+        <p className="pb-5 text-center">{message}</p> {/* Display the feedback message */}
       </div>
 
               </div>
