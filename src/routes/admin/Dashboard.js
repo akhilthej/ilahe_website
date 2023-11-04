@@ -2,6 +2,7 @@ import React from 'react';
 
 
 function Dashboard() {
+  const googleSheetsLink = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTJ83sa4Z6EJ9N8VJHbl_InJPAqF0sn7XZFb6zfRl9XVVkaAfQd6vUXO-C-Wm2Z2rQrA3OQhiwm4DRb/pubhtml?gid=0&single=true';
 
   const handleClick=()=>{
     localStorage.clear();
@@ -24,6 +25,14 @@ function Dashboard() {
     </section>
 
 
+  <div className="w-screen h-screen flex items-center justify-center">
+      <iframe
+        src={googleSheetsLink}
+        className="w-full h-full"
+        frameBorder="0"
+        scrolling="yes" // Enable scrolling within the iframe
+      ></iframe>
+    </div>
 
     </main>
   );
