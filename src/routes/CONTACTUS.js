@@ -3,37 +3,41 @@ import { Helmet } from "react-helmet-async";
 
 export default function App() {
 
-  const [message, setMessage] = useState(""); // State to hold the feedback message
+  const [message, setMessage] = useState('');
+
   function Submit(e) {
     e.preventDefault(); // Prevent the default form submission behavior
 
-    const formEle = document.querySelector("form");
+    const formEle = document.querySelector('form');
     const formDatab = new FormData(formEle);
-    
+
+    // Check if the email field is empty
+    if (formDatab.get('Email') === '') {
+      setMessage('Please enter your email address.');
+      return; // Don't submit the form if the email is empty
+    }
+
     fetch(
-      "https://script.google.com/macros/s/AKfycbxxWbBcbFO20MqQSlzNQlOZyNDj3dTj4QJTQM9w3yClV6vYIIEfGijFdkiR6XTI8m9ftQ/exec",
+      'https://script.google.com/macros/s/AKfycbxxWbBcbFO20MqQSlzNQlOZyNDj3dTj4QJTQM9w3yClV6vYIIEfGijFdkiR6XTI8m9ftQ/exec',
       {
-        method: "POST",
-        body: formDatab
+        method: 'POST',
+        body: formDatab,
       }
     )
       .then((res) => {
         if (res.status === 200) {
-          return res.text(); // Receive the response as plain text
+          return res.text();
         } else {
           throw new Error(`Received status code ${res.status}`);
         }
       })
       .then((data) => {
-        // Handle the plain text response
-        setMessage(data); // Display the response text as a message
+        setMessage(data);
       })
       .catch((error) => {
         setMessage(`An error occurred: ${error.message}`);
         console.log(error);
       });
-    
-    
   }
 
   return (
@@ -180,19 +184,51 @@ export default function App() {
                 </div>
 
                  {/*Contact Form*/}
-      <div>
+                 <div>
         <form className="form" onSubmit={(e) => Submit(e)}>
-        <label>Name</label><br/>
-          <input placeholder="Your Name" name="Name" type="text" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  "/> <br/>
-          <label>Email</label><br/>
-          <input placeholder="Your Email" name="Email" type="text" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  "/><br/>
-          <label>Subject</label><br/>
-          <input placeholder="Subject" name="Subject" type="text" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  "/><br/>
-          <label>Message</label><br/>
-          <input placeholder="Your Message" name="Message" type="text" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  pb-10 "/><br/>
-          <input type="submit" value="Submit" className="block p-3 w-full text-sm bg-black text-white hover:text-black  hover:bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  "/>
+          <label>Name</label>
+          <br />
+          <input
+            placeholder="Your Name"
+            name="Name"
+            type="text"
+            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+          />
+          <br />
+          <label>Email</label>
+          <br />
+          <input
+            placeholder="Your Email"
+            name="Email"
+            type="text"
+            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+          />
+          <br />
+          <label>Subject</label>
+          <br />
+          <input
+            placeholder="Subject"
+            name="Subject"
+            type="text"
+            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+          />
+          <br />
+          <label>Message</label>
+          <br />
+          <input
+            placeholder="Your Message"
+            name="Message"
+            type="text"
+            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 pb-10"
+          />
+          <br />
+          <input
+            type="submit"
+            value="Submit"
+            className="block p-3 w-full text-sm bg-black text-white hover:text-black  hover:bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
+          />
         </form>
-        <p className="pb-5 text-center">{message}</p> {/* Display the feedback message */}
+        <p className="pb-5 text-center">{message}</p>
       </div>
 
               </div>
