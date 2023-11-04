@@ -1,8 +1,6 @@
 import React, { useRef } from 'react';
 import Dashboard from './Dashboard';
 
-
-
 function LoginWithLocalStorage() {
   const email = useRef();
   const password = useRef();

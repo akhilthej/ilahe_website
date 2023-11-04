@@ -12,11 +12,37 @@ function Dashboard() {
   return (
     <main>
 
-    <section>
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="bg-white p-8 rounded shadow-md w-96">
+
+    <div className="flex flex-wrap">
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2">
+        {/* Your content for the first column */}
         <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
         <p>Welcome to the dashboard!</p>
+      </div>
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2">
+        {/* Your content for the second column */}
+        <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
+        <p>Welcome to the dashboard!</p>
+      </div>
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2">
+        {/* Your content for the third column */}
+        <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
+        <p>Welcome to the dashboard!</p>
+      </div>
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2">
+        {/* Your content for the fourth column */}
+        <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
+        <p>Welcome to the dashboard!</p>
+      </div>
+      {/* Add more columns as needed */}
+    </div>
+  
+
+
+    <section>
+    <div className="flex">
+      <div className="bg-white p-8 rounded shadow-md w-96">
+      
         <button onClick={handleClick}>Logout</button>
        
       </div>
