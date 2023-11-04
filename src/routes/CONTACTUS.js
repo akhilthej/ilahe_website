@@ -1,39 +1,51 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 
+export default function App() {
 
-const CONTACTUS = () => {
-
+  const [message, setMessage] = useState(""); // State to hold the feedback message
   function Submit(e) {
+    e.preventDefault(); // Prevent the default form submission behavior
+
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
+    
     fetch(
-      "https://script.google.com/macros/s/AKfycbzw3YgxNnMTuW0Xj3K84D3XaPFtvMK9pxTAQaXm-WFjZVGnfuS2UMDYi8gR5CfPFwtZ4w/exec",
+      "https://script.google.com/macros/s/AKfycbxxWbBcbFO20MqQSlzNQlOZyNDj3dTj4QJTQM9w3yClV6vYIIEfGijFdkiR6XTI8m9ftQ/exec",
       {
         method: "POST",
         body: formDatab
       }
     )
-      .then((res) => res.json())
+      .then((res) => {
+        if (res.status === 200) {
+          return res.text(); // Receive the response as plain text
+        } else {
+          throw new Error(`Received status code ${res.status}`);
+        }
+      })
       .then((data) => {
-        console.log(data);
+        // Handle the plain text response
+        setMessage(data); // Display the response text as a message
       })
       .catch((error) => {
+        setMessage(`An error occurred: ${error.message}`);
         console.log(error);
       });
+    
+    
   }
 
   return (
-    <div>
-      <Helmet>
-        <title>Contact us</title>
-        <meta
-          name="description"
-          content="Discover the top modeling and finishing school to refine your skills, boost your confidence, and embark on a successful modeling career."
-        />
-        <link rel="canonical" href="/contactus" />
-      </Helmet>
+    <main>
+    <Helmet>
+      <title>Contact us</title>
+      <meta
+        name="description"
+        content="Discover the top modeling and finishing school to refine your skills, boost your confidence, and embark on a successful modeling career."
+      />
+      <link rel="canonical" href="/contactus" />
+    </Helmet>
 
       {/* Title Card */}
       <section
@@ -43,8 +55,7 @@ const CONTACTUS = () => {
             'url("https://drive.google.com/uc?id=1-RKGIgPQ6gfNDnoW1jr6R_TzB9P_12ge")',
           backgroundSize: "cover",
           backgroundPosition: "center",
-        }}
-      >
+        }}>
         <div className="flex flex-col items-center md:flex-row justify-center">
           <div className="md:w-1/2 md:pr-10"></div>
           <div className="md:w-1/2 px-5">
@@ -77,6 +88,7 @@ const CONTACTUS = () => {
           </div>
         </div>
       </section>
+
 
   {/*contact form*/}
   <section className="bg-gray-200 pt-20">
@@ -167,45 +179,30 @@ const CONTACTUS = () => {
                   </div>
                 </div>
 
-                <form className="form" onSubmit={(e) => Submit(e)}>
-    <input
-      placeholder="Your Name"
-      name="Name"
-      type="text"
-      className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   "
-    />
-    <input
-      placeholder="Your Email"
-      name="Email"
-      type="text"
-      className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   "
-    />
-    <input
-      placeholder="Your Message"
-      name="Message"
-      type="text"
-      className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   "
-    />
-    <button
-      name="Name"
-      type="submit"
-      className="block p-3 w-full text-sm  bg-black text-white rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  "
-    >
-      Submit
-    </button>
-  </form>
+                 {/*Contact Form*/}
+      <div>
+        <form className="form" onSubmit={(e) => Submit(e)}>
+          <input placeholder="Your Name" name="Name" type="text" /> <br/>
+          <input placeholder="Your Email" name="Email" type="text" /><br/>
+          <input placeholder="Subject" name="Subject" type="text" /><br/>
+          <input placeholder="Your Message" name="Message" type="text" /><br/>
+          <input type="submit" value="Submit" />
+        </form>
+        <p>{message}</p> {/* Display the feedback message */}
+      </div>
 
-               
               </div>
             </div>
           </div>
         </div>
       </section>
 
+   
+    
+  
 
-
-      {/*FAQ*/}
-      <div className="flex">
+   {/*FAQ*/}
+   <div className="flex">
         <div className="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
           <div className="flex flex-col items-center">
             <h2 className="font-bold text-5xl mt-5 tracking-tight">FAQ</h2>
@@ -736,8 +733,6 @@ const CONTACTUS = () => {
           </div>
         </>
       </div>
-    </div>
+    </main>
   );
-};
-
-export default CONTACTUS;
+}
