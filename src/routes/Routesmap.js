@@ -34,7 +34,6 @@ import Contactus from './CONTACTUS';
 
 
 import Login from './admin/Loginform.js'
-import Dashboard from './admin/Dashboard'
 
 export {
 /*Fixed */
@@ -50,6 +49,6 @@ ReturnPolicy,
 Modeling,ModelingBasicService,ModelingEliteService,ModelingExpert,
 FinishingSchool,FinishingBasicService,FinishingEliteService,FinishingExpert,
 
-Login,Dashboard
+Login,
 
 };
