@@ -1,54 +1,47 @@
-import React, { useRef } from 'react';
-import Dashboard from './Dashboard/Dashboard';
+import React, { useState } from 'react';
 
-function LoginWithLocalStorage() {
-  const email = useRef();
-  const password = useRef();
-  const getEmail = localStorage.getItem('emailData');
-  const getPassword = localStorage.getItem('passwordData');
+const Login = ({ onLogin }) => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
-  const handleSubmit = () => {
-    if (email.current.value === 'admin@ilahe.in' && password.current.value === '12345') {
-      localStorage.setItem('emailData', 'admin@ilahe.in');
-      localStorage.setItem('passwordData', '12345');
+  const handleLogin = () => {
+    if (username === 'admin@ilahe.in' && password === '12345') {
+      onLogin();
+    } else {
+      alert('Invalid credentials. Please try again.');
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      {getEmail && getPassword ? (
-        <Dashboard />
-      ) : (
-        <div className="bg-white p-8 rounded shadow-md w-96">
-          <h1 className="text-2xl font-bold mb-4">Login</h1>
-          <form onSubmit={handleSubmit}>
-            <div className="mb-4">
-              <input
-                type="text"
-                ref={email}
-                className="w-full p-2 border border-gray-300"
-                placeholder="Email"
-              />
-            </div>
-            <div className="mb-4">
-              <input
-                type="password"
-                ref={password}
-                className="w-full p-2 border border-gray-300"
-                placeholder="Password"
-              />
-            </div>
-            <button
-              type="submit"
-              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
-            >
-              Login
-            </button>
-          </form>
-        </div>
-      )}
-    </div>
+    <div className=' min-h-screen'>
+    <div className="max-w-sm mx-auto mt-16 p-6 bg-white rounded-lg shadow-md">
+      <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
+      <div className="mb-4">
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+        />
+      </div>
+      <div className="mb-4">
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+        />
+      </div>
+      <button
+        className="w-full py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none"
+        onClick={handleLogin}
+      >
+        Login
+      </button>
+    </div></div>
   );
-}
+};
 
-export default LoginWithLocalStorage;
+export default Login;

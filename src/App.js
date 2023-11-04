@@ -3,7 +3,8 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga4'
 import { Navbar, Footer, PrivacyPolicy, TermsnConditions, Disclaimer, ShippingandDelivery, ReturnPolicy, Error404, Home, Aboutus, Contactus, Blogs, Reviews,
   Modeling, ModelingBasicService, ModelingEliteService, ModelingExpert,
-  FinishingSchool, FinishingBasicService, FinishingEliteService, FinishingExpert, Dashboard, Login,
+  FinishingSchool, FinishingBasicService, FinishingEliteService, FinishingExpert, 
+  Dashboard, Login,
 } from './routes/Routesmap';
 import NavbarMobile from './components/Navbar/NavbarMobile';
 
@@ -33,6 +34,7 @@ const routes = [
 
 
   { path: '/login', element: <Login /> },
+  { path: '/dashboard', element: <Dashboard /> },
   
 ];
 
@@ -42,19 +44,17 @@ export function App() {
   const location = useLocation();
   window.scrollTo(0, 0);
 
-  // Determine if the current route is "/login"
-  const isLoginPage = location.pathname === '/login';
 
   return (
     <>
-      {!isLoginPage && <Navbar />}
-      {!isLoginPage && <NavbarMobile />}
+      <Navbar />
+      <NavbarMobile />
       <Routes location={location} key={location.pathname}>
         {routes.map((route, index) => (
           <Route key={index} path={route.path} element={route.element} />
         ))}
       </Routes>
-      {!isLoginPage && <Footer />}
+      <Footer />
     </>
   );
 }
