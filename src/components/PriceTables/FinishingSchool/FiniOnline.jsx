@@ -6,7 +6,7 @@ const FinishingPriceTable = () => {
     <main>
 
     <section>
-  <div className="container max-w-full mx-auto py-24 px-6">
+  <div className="container max-w-full mx-auto pb-24 px-6">
     <h1 className="text-center text-4xl text-black font-medium leading-snug tracking-wider">
       Pricing
     </h1>
