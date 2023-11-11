@@ -2,7 +2,7 @@ import React from 'react';
 
 const FinishingSchoolBasic = () => {
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="cursor-default section relative bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 py-16">
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-5">
           LEVEL-BASIC FINISHING SCHOOL

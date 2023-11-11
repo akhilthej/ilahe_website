@@ -8,6 +8,8 @@ import lvlexpert from './lvlexpert-mobeling-1.webp'
 import lvlelit from './lvlelirt-mobeling.webp'
 import lvlbasic from './lvlbasic-modeling-1.webp'
 
+import {ModelingVideo} from '../../../components/data/data';
+
 import { Helmet } from "react-helmet-async";
 
 
@@ -79,6 +81,24 @@ const Modeling = () => {
             </div>
           </div>
         </section>
+
+   {/*Video */}
+        <div className="flex justify-center items-center">
+          <video
+            className="rounded-lg"
+            poster=""
+            loop
+            width="80%"
+            height="auto"
+            autoPlay
+            controls
+            playsInline
+            preload="metadata" 
+          >
+            <source src={ModelingVideo} type="video/mp4" />
+          </video>
+        </div>
+
 
         <ModelingPriceTable />
         

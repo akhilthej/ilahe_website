@@ -9,6 +9,8 @@ import lvlbasic from '../Modeling/lvlbasic-modeling-1.webp'
 import { Helmet } from "react-helmet-async";
 
 
+import {FinishingSchoolVideo} from '../../../components/data/data';
+
 import FinishingPriceTable from '../../../components/PriceTables/FinishingSchool/FinishingPriceTable'
 
 const FinishingSchool = () => {
@@ -81,6 +83,22 @@ const FinishingSchool = () => {
           </div>
         </section>
 
+  {/*Video */}
+  <div className="flex justify-center items-center">
+          <video
+            className="rounded-lg"
+            poster=""
+            loop
+            width="80%"
+            height="auto"
+            autoPlay
+            controls
+            playsInline
+            preload="metadata" 
+          >
+            <source src={FinishingSchoolVideo} type="video/mp4" />
+          </video>
+        </div>
 
 
         <FinishingPriceTable />

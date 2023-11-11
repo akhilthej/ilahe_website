@@ -1,5 +1,8 @@
 /*Videos */
 import HomeVideo from '../../assets/Videos/homepage1.mov';
+import ModelingVideo from '../../assets/Videos/ModelingVideo.mp4';
+import FinishingSchoolVideo from '../../assets/Videos/FinishingSchoolVideo.mp4';
+import BlogVideo from '../../assets/Videos/BlogVideo.mp4';
 
 /*icons */
 import googlereview from '../../assets/Icons/googlereview.png';
@@ -11,7 +14,7 @@ import ProfessionalDevelopment from '../../assets/Icons/ProfessionalDevelopment.
 export {
 
   /*Home Page */
-  HomeVideo,
+  HomeVideo,ModelingVideo,FinishingSchoolVideo,BlogVideo,
 
   
   /*Icons*/

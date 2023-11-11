@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet-async';
 import {Link} from 'react-router-dom';
 
+import {BlogVideo} from '../components/data/data';
 
 
 const TECHNOLOGIES = () => {
@@ -37,7 +38,23 @@ const TECHNOLOGIES = () => {
 </section>
 
 
- 
+  {/*Video */}
+  <div className="flex pt-10 justify-center items-center">
+          <video
+            className="rounded-lg"
+            poster=""
+            loop
+            width="80%"
+            height="auto"
+            autoPlay
+            controls
+            playsInline
+            preload="metadata" 
+          >
+            <source src={BlogVideo} type="video/mp4" />
+          </video>
+        </div>
+
 
 
 
@@ -47,7 +64,7 @@ const TECHNOLOGIES = () => {
 
   <>
   <div className='text-center justify-center pt-10 pb-8'>
-  <span className="cursor-default upanddown  font-extrabold text-transparent text-2xl md:text-4xl  lg:text-4xl bg-clip-text text-gray-800  tracking-tight">
+  <span className="text-black cursor-default upanddown  font-extrabold  text-2xl md:text-4xl  lg:text-4xl bg-clip-text  tracking-tight">
                   Ilahe : Blogs
                 </span></div>
   {/* ====== Blog Section Start */}
@@ -64,19 +81,16 @@ const TECHNOLOGIES = () => {
               />
             </div>
             <div>
-              <span className="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-black">
-                Dec 22, 2023
-              </span>
               <h3>
                 <a
                   href="https://cyberspacedigital.blogspot.com/2023/06/the-importance-of-website-for-your.html"
                   className="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
                 >
-                  The Importance of a Website for Your Business: Unlocking Online Success
+                  Coming Soon
                 </a>
               </h3>
               <p className="text-body-color text-base">
-              In today's digital age, having a strong online presence is crucial for the success and growth of any business.
+              Coming Soon
               </p>
             </div>
           </div>
@@ -91,20 +105,16 @@ const TECHNOLOGIES = () => {
               />
             </div>
             <div>
-              <span className="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-black">
-                Mar 15, 2023
-              </span>
               <h3>
                 <a
                   href="javascript:void(0)"
                   className="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
                 >
-                  How to earn more money as a wellness coach
+                  Coming Soon
                 </a>
               </h3>
               <p className="text-body-color text-base">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+              Coming Soon
               </p>
             </div>
           </div>
@@ -119,20 +129,16 @@ const TECHNOLOGIES = () => {
               />
             </div>
             <div>
-              <span className="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-black">
-                Jan 05, 2023
-              </span>
               <h3>
                 <a
                   href="javascript:void(0)"
                   className="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
                 >
-                  The no-fuss guide to upselling and cross selling
+                  Coming Soon
                 </a>
               </h3>
               <p className="text-body-color text-base">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+              Coming Soon
               </p>
             </div>
           </div>
