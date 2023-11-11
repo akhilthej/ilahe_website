@@ -1,19 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.44a96e4c.css",
-    "main.js": "/static/js/main.ab2915e4.js",
+    "main.js": "/static/js/main.52712e01.js",
     "static/media/homepage1.mov": "/static/media/homepage1.962e960b8cbd104a882a.mov",
     "static/media/About3.webp": "/static/media/About3.151eb762c2066415a909.webp",
     "static/media/AboutSubcover.jpg": "/static/media/AboutSubcover.98fe3dba1f5103319ea9.jpg",
     "static/media/About2.png": "/static/media/About2.f38b6089d6fb3c0bc682.png",
+    "static/media/PersonalGrowth.svg": "/static/media/PersonalGrowth.9668014f3c5f75db580d27b971159540.svg",
     "static/media/CSDLogo.svg": "/static/media/CSDLogo.ed4842a8384c69e12c4d9de61d76a4a4.svg",
     "static/media/csdv2Logofooter.svg": "/static/media/csdv2Logofooter.ed4842a8384c69e12c4d9de61d76a4a4.svg",
     "static/media/csdv2Logonavbar.svg": "/static/media/csdv2Logonavbar.ed4842a8384c69e12c4d9de61d76a4a4.svg",
+    "static/media/Training.svg": "/static/media/Training.2308bb1dd9e86e785c5a0fd67ba38e28.svg",
     "static/media/SelfGromming.svg": "/static/media/SelfGromming.25961cf6e3e09dc954c0cbf14cf15b6c.svg",
     "static/media/lvlbasic-modeling-1.webp": "/static/media/lvlbasic-modeling-1.5465a4c3ec1d31ba50d1.webp",
     "static/media/lvlelirt-mobeling.webp": "/static/media/lvlelirt-mobeling.c600edb5f09482195e75.webp",
     "static/media/Subscribe.png": "/static/media/Subscribe.68f61a5d75abbc0d1333.png",
     "static/media/lvlexpert-mobeling-1.webp": "/static/media/lvlexpert-mobeling-1.532c419ecbe05da448e9.webp",
+    "static/media/ProfessionalDevelopment.svg": "/static/media/ProfessionalDevelopment.1540c2b18cbacbf7e49e7a453f62eb11.svg",
     "static/media/googlereview.png": "/static/media/googlereview.85d0946b65c74505d37a.png",
     "static/media/WhatsApp.webp": "/static/media/WhatsApp.f3b54735f5be9f9103e0.webp",
     "static/media/logo7.webp": "/static/media/logo7.32eef4c7a883a2447180.webp",
@@ -29,10 +32,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/logo2.webp": "/static/media/logo2.50541232b7f94451fd09.webp",
     "main.44a96e4c.css.map": "/static/css/main.44a96e4c.css.map",
-    "main.ab2915e4.js.map": "/static/js/main.ab2915e4.js.map"
+    "main.52712e01.js.map": "/static/js/main.52712e01.js.map"
   },
   "entrypoints": [
     "static/css/main.44a96e4c.css",
-    "static/js/main.ab2915e4.js"
+    "static/js/main.52712e01.js"
   ]
 }
