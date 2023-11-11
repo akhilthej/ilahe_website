@@ -4,8 +4,8 @@ import ReactGA from 'react-ga4'
 import { Navbar, Footer, PrivacyPolicy, TermsnConditions, Disclaimer, ShippingandDelivery, ReturnPolicy, Error404, Home, Aboutus, Contactus, Blogs, Reviews,
   Modeling, ModelingBasicService, ModelingEliteService, ModelingExpert,
   FinishingSchool, FinishingBasicService, FinishingEliteService, FinishingExpert, 
-  Dashboard, Login,
-} from './routes/Routesmap';
+
+} from './routes/Routes';
 import NavbarMobile from './components/Navbar/NavbarMobile';
 
 const routes = [
@@ -31,10 +31,6 @@ const routes = [
   { path: '/returnpolicy', element: <ReturnPolicy /> },
   { path: '/shippingdelivery', element: <ShippingandDelivery /> },
   { path: '/disclaimer', element: <Disclaimer /> },
-
-
-  { path: '/login', element: <Login /> },
-  { path: '/dashboard', element: <Dashboard /> },
   
 ];
 
