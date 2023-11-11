@@ -1,4 +1,5 @@
 import React from "react";
+import { useRef } from 'react';
 import { Link } from "react-router-dom";
 
 import Brand_slider from "../components/Brand_slider";
@@ -6,16 +7,26 @@ import Brand_slider from "../components/Brand_slider";
 import { HomeVideo } from "../components/data/data";
 import ImageSlider from "../components/ImageSlider";
 
-import {
-  FixedPrice,
-  OntimeDelivery,
-  TimeManage,
-  HiringModel,
-} from "../components/data/data";
+
 import { GlobalData } from "../components/data/GlobalData";
 
-
+import {SelfGromming,Training,PersonalGrowth,ProfessionalDevelopment,} from '../components/data/data'
+import thumbnailvideo1 from '../assets/CoverImages/AboutSubcover.jpg'
 const Home = () => {
+
+  const videoRef = useRef(null);
+
+  const handleVideoClick = () => {
+    const video = videoRef.current;
+
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  };
+
+
   return (
     <>
       
@@ -55,20 +66,22 @@ const Home = () => {
 
         {/* Video */}
         <div className="flex justify-center items-center">
-          <video
-            className="rounded-lg"
-            poster=""
-            loop
-            width="80%"
-            height="auto"
-            autoPlay
-            controls
-            playsInline
-            preload="metadata" 
-          >
-            <source src={HomeVideo} type="video/mp4" />
-          </video>
-        </div>
+      <video
+        className="rounded-lg"
+        poster={thumbnailvideo1} // Set the path to your thumbnail image
+        loop
+        width="80%"
+        height="auto"
+        autoPlay
+        controls
+        playsInline
+        preload="metadata"
+        ref={videoRef}
+        onClick={handleVideoClick}
+      >
+        <source src={HomeVideo} type="video/mp4" />
+      </video>
+    </div>
 
         {/* Tagline */}
         <section className="flex items-center my-10 justify-center  bg-white ">
@@ -292,7 +305,7 @@ const Home = () => {
                 <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                   <div className="inline-block text-gray-900 mb-4">
                     <img
-                      src={FixedPrice}
+                      src={SelfGromming}
                       className="w-40 ml-auto"
                       alt="illustration"
                       loading="lazy"
@@ -325,7 +338,7 @@ const Home = () => {
                 <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                   <div className="inline-block text-gray-900 mb-4">
                     <img
-                      src={TimeManage}
+                      src={Training}
                       className="w-40 ml-auto"
                       alt="illustration"
                       loading="lazy"
@@ -358,7 +371,7 @@ const Home = () => {
                 <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                   <div className="inline-block text-gray-900 mb-4">
                     <img
-                      src={OntimeDelivery}
+                      src={PersonalGrowth}
                       className="w-40 ml-auto"
                       alt="illustration"
                       loading="lazy"
@@ -391,7 +404,7 @@ const Home = () => {
                 <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                   <div className="inline-block text-gray-900 mb-4">
                     <img
-                      src={HiringModel}
+                      src={ProfessionalDevelopment}
                       className="w-40 ml-auto"
                       alt="illustration"
                       loading="lazy"

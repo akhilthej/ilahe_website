@@ -2,8 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 import { GlobalData } from '../components/data/GlobalData';
+import AboutSubcover from '../assets/CoverImages/AboutSubcover.jpg'
 import About2 from '../assets/CoverImages/About2.png'
-import About3 from '../assets/CoverImages/About3.jpg'
+import About3 from '../assets/CoverImages/About3.webp'
 
 const Aboutus = () => {
   return (
@@ -82,8 +83,7 @@ const Aboutus = () => {
        {/* WE BUILD */}
        <section
           style={{
-            backgroundImage:
-              'url("https://drive.google.com/uc?id=1YbaOxUrnvo_bq067RffGDgedztOaEMia")',
+            backgroundImage:`url(${AboutSubcover})`,
             backgroundSize: "cover",
             backgroundPosition: "top",
           }}
