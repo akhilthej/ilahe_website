@@ -242,19 +242,17 @@ export default function App() {
   
 
    {/*FAQ*/}
-   <div className="flex">
+   <div className="flex py-5">
         <div className="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
           <div className="flex flex-col items-center">
             <h2 className="font-bold text-5xl mt-5 tracking-tight">FAQ</h2>
-            <p className="text-neutral-500 text-xl mt-3">
-              Web Development & App Development
-            </p>
+           
           </div>
           <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
             <div className="py-5">
               <details className="group">
                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                  <span> What services do you offer?</span>
+                  <span> What is a modeling and finishing school?</span>
                   <span className="transition group-open:rotate-180">
                     <svg
                       fill="none"
@@ -272,16 +270,14 @@ export default function App() {
                   </span>
                 </summary>
                 <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                  We offer a wide range of services, including web development,
-                  mobile app development, custom software development, UX/UI
-                  design, and digital strategy consulting.
+                A modeling and finishing school is an institution that provides comprehensive training in various aspects of modeling and personal development. Our school focuses on enhancing not only modeling skills but also refining personal attributes such as poise, etiquette, and communication.
                 </p>
               </details>
             </div>
             <div className="py-5">
               <details className="group">
                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                  <span> What platforms do you develop apps for?</span>
+                  <span> Who can enroll in the modeling and finishing school?</span>
                   <span className="transition group-open:rotate-180">
                     <svg
                       fill="none"
@@ -299,38 +295,7 @@ export default function App() {
                   </span>
                 </summary>
                 <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                  We develop apps for iOS, Android, and cross-platform solutions
-                  like React Native and Flutter.
-                </p>
-              </details>
-            </div>
-            <div className="py-5">
-              <details className="group">
-                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                  <span>
-                    {" "}
-                    Do you offer both front-end and back-end development?
-                  </span>
-                  <span className="transition group-open:rotate-180">
-                    <svg
-                      fill="none"
-                      height={24}
-                      shapeRendering="geometricPrecision"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </span>
-                </summary>
-                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                  Yes, we provide both front-end and back-end development
-                  services to create fully functional web and mobile
-                  applications.
+                Our programs are open to individuals of all ages and backgrounds who are passionate about pursuing a career in modeling or wish to enhance their personal and professional development. We welcome beginners as well as those with some prior experience in the field.
                 </p>
               </details>
             </div>
@@ -339,7 +304,7 @@ export default function App() {
                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                   <span>
                     {" "}
-                    How much does it cost to develop a website or app?
+                    What programs do you offer?
                   </span>
                   <span className="transition group-open:rotate-180">
                     <svg
@@ -358,9 +323,7 @@ export default function App() {
                   </span>
                 </summary>
                 <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                  The cost depends on the project's complexity, features, and
-                  technology requirements. We offer free consultations and
-                  provide customized quotes based on your specific needs.
+                We offer a range of programs tailored to meet the diverse needs of our students. Our offerings include modeling courses, grooming and etiquette classes, personal development workshops, and specialized training sessions. Whether you're interested in runway modeling, photography, or overall personality development, we have a program for you.
                 </p>
               </details>
             </div>
@@ -369,7 +332,7 @@ export default function App() {
                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                   <span>
                     {" "}
-                    What is the typical timeline for a development project?
+                    How long are the courses, and what is the time commitment?
                   </span>
                   <span className="transition group-open:rotate-180">
                     <svg
@@ -388,9 +351,7 @@ export default function App() {
                   </span>
                 </summary>
                 <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                  Project timelines vary based on complexity, but we will
-                  provide a project roadmap with milestones and estimated
-                  delivery dates during the planning phase.
+                The duration of our courses varies based on the program. Typically, courses range from a few weeks to one month. The time commitment also depends on the specific program, with options for both online and offline courses.
                 </p>
               </details>
             </div>
@@ -399,8 +360,8 @@ export default function App() {
                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                   <span>
                     {" "}
-                    Can you maintain and update our website or app after it's
-                    developed?
+                    What skills will I learn in the modeling program?
+
                   </span>
                   <span className="transition group-open:rotate-180">
                     <svg
@@ -419,63 +380,7 @@ export default function App() {
                   </span>
                 </summary>
                 <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                  Yes, we offer ongoing maintenance and support services to
-                  ensure your website or app remains up to date and functions
-                  smoothly.
-                </p>
-              </details>
-            </div>
-            <div className="py-5">
-              <details className="group">
-                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                  <span> Do you follow Agile development methodologies?</span>
-                  <span className="transition group-open:rotate-180">
-                    <svg
-                      fill="none"
-                      height={24}
-                      shapeRendering="geometricPrecision"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </span>
-                </summary>
-                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                  Yes, we commonly use Agile methodologies to ensure
-                  flexibility, collaboration, and frequent updates during the
-                  development process.
-                </p>
-              </details>
-            </div>
-            <div className="py-5">
-              <details className="group">
-                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                  <span> Can you help with hosting and server setup?</span>
-                  <span className="transition group-open:rotate-180">
-                    <svg
-                      fill="none"
-                      height={24}
-                      shapeRendering="geometricPrecision"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </span>
-                </summary>
-                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                  Yes, we offer assistance with hosting, server setup, and
-                  deployment to ensure your web application is accessible to
-                  users.
+                Our modeling program covers a wide array of skills, including runway techniques, posing, photo shoots, makeup application, and more. We also focus on building self-confidence and developing a strong personal brand, essential for success in the modeling industry.
                 </p>
               </details>
             </div>
@@ -484,8 +389,8 @@ export default function App() {
                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                   <span>
                     {" "}
-                    What steps do you take to ensure the security of web and
-                    mobile applications?
+                    How can I apply for admission?
+
                   </span>
                   <span className="transition group-open:rotate-180">
                     <svg
@@ -504,9 +409,7 @@ export default function App() {
                   </span>
                 </summary>
                 <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                  We follow industry best practices, conduct security audits,
-                  and implement encryption, authentication, and authorization
-                  measures to enhance the security of your application.
+                You can apply for admission through our online application portal on our website. Simply fill out the application form, submit the required documents, and follow the instructions provided. Our admissions team will review your application, and you will be contacted for further steps.
                 </p>
               </details>
             </div>
@@ -515,8 +418,9 @@ export default function App() {
                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                   <span>
                     {" "}
-                    Can you assist with app store submissions and web
-                    deployment?
+                    How can I stay updated on upcoming events and workshops?
+
+
                   </span>
                   <span className="transition group-open:rotate-180">
                     <svg
@@ -535,244 +439,20 @@ export default function App() {
                   </span>
                 </summary>
                 <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                  Yes, we can help you with the submission process for app
-                  stores (Apple App Store, Google Play Store) and deploy
-                  websites to hosting servers.
+                To stay informed about our latest events, workshops, and news, you can know through our website. Additionally, follow us on our social media channels for real-time updates and behind-the-scenes glimpses of our school activities.
                 </p>
               </details>
             </div>
+   
+        
+         
             {/* Add more FAQ questions here using the same structure */}
           </div>
         </div>
 
-        <>
-          <div className="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
-            <div className="flex flex-col items-center">
-              <h2 className="font-bold text-5xl mt-5 tracking-tight">FAQ</h2>
-              <p className="text-neutral-500 text-xl mt-3">Digital Marketing</p>
-            </div>
-            <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
-              <div className="py-5">
-                <details className="group">
-                  <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                    <span>
-                      {" "}
-                      What services do you offer as a digital marketing company?
-                    </span>
-                    <span className="transition group-open:rotate-180">
-                      <svg
-                        fill="none"
-                        height={24}
-                        shapeRendering="geometricPrecision"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width={24}
-                      >
-                        <path d="M6 9l6 6 6-6" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                    We offer a wide range of digital marketing services,
-                    including search engine optimization (SEO), pay-per-click
-                    advertising (PPC), social media marketing, content
-                    marketing, email marketing, and more.
-                  </p>
-                </details>
-              </div>
-              <div className="py-5">
-                <details className="group">
-                  <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                    <span> How can digital marketing benefit my business?</span>
-                    <span className="transition group-open:rotate-180">
-                      <svg
-                        fill="none"
-                        height={24}
-                        shapeRendering="geometricPrecision"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width={24}
-                      >
-                        <path d="M6 9l6 6 6-6" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                    Digital marketing can help your business by increasing your
-                    online visibility, driving targeted traffic to your website,
-                    generating leads and conversions, and improving your brand's
-                    online reputation.
-                  </p>
-                </details>
-              </div>
-              <div className="py-5">
-                <details className="group">
-                  <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                    <span>
-                      {" "}
-                      Do you customize digital marketing strategies for each
-                      client?
-                    </span>
-                    <span className="transition group-open:rotate-180">
-                      <svg
-                        fill="none"
-                        height={24}
-                        shapeRendering="geometricPrecision"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width={24}
-                      >
-                        <path d="M6 9l6 6 6-6" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                    Yes, we tailor our digital marketing strategies to the
-                    unique needs and goals of each client. We believe in a
-                    personalized approach to deliver the best results.
-                  </p>
-                </details>
-              </div>
-              <div className="py-5">
-                <details className="group">
-                  <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                    <span>
-                      {" "}
-                      What is the typical timeline for seeing results from
-                      digital marketing efforts?
-                    </span>
-                    <span className="transition group-open:rotate-180">
-                      <svg
-                        fill="none"
-                        height={24}
-                        shapeRendering="geometricPrecision"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width={24}
-                      >
-                        <path d="M6 9l6 6 6-6" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                    The timeline for results varies depending on the specific
-                    strategy and goals. Some strategies may show immediate
-                    results, while others, like SEO, require several months to
-                    see substantial improvements.
-                  </p>
-                </details>
-              </div>
-              <div className="py-5">
-                <details className="group">
-                  <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                    <span>
-                      {" "}
-                      How do you measure the success of a digital marketing
-                      campaign?
-                    </span>
-                    <span className="transition group-open:rotate-180">
-                      <svg
-                        fill="none"
-                        height={24}
-                        shapeRendering="geometricPrecision"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width={24}
-                      >
-                        <path d="M6 9l6 6 6-6" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                    We use various key performance indicators (KPIs) and
-                    analytics tools to measure the success of a campaign,
-                    including website traffic, conversion rates, click-through
-                    rates, and return on investment (ROI).
-                  </p>
-                </details>
-              </div>
-              <div className="py-5">
-                <details className="group">
-                  <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                    <span>
-                      {" "}
-                      Do you offer website design and development services as
-                      part of digital marketing?
-                    </span>
-                    <span className="transition group-open:rotate-180">
-                      <svg
-                        fill="none"
-                        height={24}
-                        shapeRendering="geometricPrecision"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width={24}
-                      >
-                        <path d="M6 9l6 6 6-6" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                    Yes, we provide website design and development services to
-                    ensure that your website is optimized for digital marketing
-                    efforts, user-friendly, and visually appealing.
-                  </p>
-                </details>
-              </div>
-              <div className="py-5">
-                <details className="group">
-                  <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                    <span>
-                      {" "}
-                      Can you help with online advertising, such as Google Ads
-                      and Facebook Ads?
-                    </span>
-                    <span className="transition group-open:rotate-180">
-                      <svg
-                        fill="none"
-                        height={24}
-                        shapeRendering="geometricPrecision"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        viewBox="0 0 24 24"
-                        width={24}
-                      >
-                        <path d="M6 9l6 6 6-6" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                    Absolutely! We specialize in managing online advertising
-                    campaigns, including Google Ads, Facebook Ads, and other
-                    platforms, to drive traffic and conversions.
-                  </p>
-                </details>
-              </div>
-              {/* Add more FAQ questions here using the same structure */}
-            </div>
-          </div>
-        </>
-      </div>
+        
+  </div>
+  
     </main>
   );
 }
