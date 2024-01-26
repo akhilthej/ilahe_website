@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.00a3a0b4.css",
-    "main.js": "/static/js/main.b521a9f5.js",
+    "main.css": "/static/css/main.0b5a6d5a.css",
+    "main.js": "/static/js/main.4a9395f1.js",
     "static/media/homepage1.mov": "/static/media/homepage1.962e960b8cbd104a882a.mov",
     "static/media/About3.webp": "/static/media/About3.151eb762c2066415a909.webp",
     "static/media/BlogVideo.mp4": "/static/media/BlogVideo.3005186f266f53cc6555.mp4",
@@ -9,6 +9,7 @@
     "static/media/FinishingSchoolVideo.mp4": "/static/media/FinishingSchoolVideo.a07a88ab21d0f17a2878.mp4",
     "static/media/AboutSubcover.jpg": "/static/media/AboutSubcover.98fe3dba1f5103319ea9.jpg",
     "static/media/About2.png": "/static/media/About2.f38b6089d6fb3c0bc682.png",
+    "static/media/Contact_us.png": "/static/media/Contact_us.6990aabf42791a1bf917.png",
     "static/media/PersonalGrowth.svg": "/static/media/PersonalGrowth.9668014f3c5f75db580d27b971159540.svg",
     "static/media/CSDLogo.svg": "/static/media/CSDLogo.ed4842a8384c69e12c4d9de61d76a4a4.svg",
     "static/media/csdv2Logofooter.svg": "/static/media/csdv2Logofooter.ed4842a8384c69e12c4d9de61d76a4a4.svg",
@@ -34,11 +35,11 @@
     "static/media/logo3.webp": "/static/media/logo3.8aaf55012bce35cfa4a0.webp",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/logo2.webp": "/static/media/logo2.50541232b7f94451fd09.webp",
-    "main.00a3a0b4.css.map": "/static/css/main.00a3a0b4.css.map",
-    "main.b521a9f5.js.map": "/static/js/main.b521a9f5.js.map"
+    "main.0b5a6d5a.css.map": "/static/css/main.0b5a6d5a.css.map",
+    "main.4a9395f1.js.map": "/static/js/main.4a9395f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.00a3a0b4.css",
-    "static/js/main.b521a9f5.js"
+    "static/css/main.0b5a6d5a.css",
+    "static/js/main.4a9395f1.js"
   ]
 }
