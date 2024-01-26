@@ -1,65 +1,75 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import Contactcover from '../assets/CoverImages/Contact_us.png'
 
-export default function App() {
+const ContactForm = () => {
+ 
 
-  const [message, setMessage] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phonenumber:'',
+    message: '',
+  });
 
-  function Submit(e) {
-    e.preventDefault(); // Prevent the default form submission behavior
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-    const formEle = document.querySelector('form');
-    const formDatab = new FormData(formEle);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    // Check if the email field is empty
-    if (formDatab.get('Email') === '') {
-      setMessage('Please enter your email address.');
-      return; // Don't submit the form if the email is empty
-    }
+    // Replace 'YOUR_DISCORD_WEBHOOK_URL' with the actual URL of your Discord webhook
+    const discordWebhookUrl = 'https://discord.com/api/webhooks/1200521022764503070/rkDGqX2Y1jzqnCD0bPqPnQ20n8tTUDvDE06E83V-1gE-cKJgd0FmwJqtkgyqwx3gD00C';
 
-    fetch(
-      'https://script.google.com/macros/s/AKfycbxxWbBcbFO20MqQSlzNQlOZyNDj3dTj4QJTQM9w3yClV6vYIIEfGijFdkiR6XTI8m9ftQ/exec',
-      {
+    // Prepare the message to be sent to Discord
+    const message = {
+      content: `Contact Form Submission\n\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
+    };
+
+    try {
+      // Send a POST request to the Discord webhook
+      const response = await fetch(discordWebhookUrl, {
         method: 'POST',
-        body: formDatab,
-      }
-    )
-      .then((res) => {
-        if (res.status === 200) {
-          return res.text();
-        } else {
-          throw new Error(`Received status code ${res.status}`);
-        }
-      })
-      .then((data) => {
-        setMessage(data);
-      })
-      .catch((error) => {
-        setMessage(`An error occurred: ${error.message}`);
-        console.log(error);
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(message),
       });
-  }
+
+      // Check if the request was successful
+      if (response.ok) {
+        alert('Form submitted successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        alert('Error submitting the form. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An unexpected error occurred. Please try again later.');
+    }
+  };
 
   return (
-    <main>
-    <Helmet>
-      <title>Contact us</title>
-      <meta
-        name="description"
-        content="Discover the top modeling and finishing school to refine your skills, boost your confidence, and embark on a successful modeling career."
-      />
-      <link rel="canonical" href="/contactus" />
-    </Helmet>
+    <div>
+        <Helmet>
+        <title>Contact us</title>
+        <meta
+          name="description"
+          content="Web Development and Digital Marketing Company. We are here to build you business online. One stop for all your digital needs."
+        />
+        <link rel="canonical" href="/contactus" />
+      </Helmet>
 
-      {/* Title Card */}
-      <section
+     {/* Title Card */}
+     <section
         className="py-10 sm:py-40"
         style={{
-          backgroundImage:
-            'url("https://drive.google.com/uc?id=1-RKGIgPQ6gfNDnoW1jr6R_TzB9P_12ge")',
+          backgroundImage:`url("${Contactcover}")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-        }}>
+        }}
+      >
         <div className="flex flex-col items-center md:flex-row justify-center">
           <div className="md:w-1/2 md:pr-10"></div>
           <div className="md:w-1/2 px-5">
@@ -76,13 +86,18 @@ export default function App() {
                 digital office.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a href="mailto:admin@ilahe.in">
+              <a href="mailto:admin@cyberspacedigital.in">
                   <a className="transform rounded-md bg-white px-5 py-3 font-medium text-black transition-colors hover:bg-black hover:text-white">
                     Email
                   </a>
                 </a>
+                <a href="tel:+91-814-340-7758">
+                  <a className="transform rounded-md bg-white px-5 py-3 font-medium text-black transition-colors hover:bg-black hover:text-white">
+                    Phone
+                  </a>
+                </a>
               
-                <a href="https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20looking%20some%20information.">
+                <a href="https://api.whatsapp.com/send?phone=918143407758&text=Welcome%20to%20Cyberspacedigital">
                   <a className="transform rounded-md bg-white px-5 py-3 font-medium text-black transition-colors hover:bg-black hover:text-white">
                     WhatsApp
                   </a>
@@ -94,8 +109,10 @@ export default function App() {
       </section>
 
 
-  {/*contact form*/}
-  <section className="bg-gray-200 pt-20">
+
+
+    {/*contact form*/}
+    <section className="bg-gray-200 pt-20">
         <div class="relative flex items-top justify-center  sm:items-center sm:pt-0">
           <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class=" overflow-hidden">
@@ -156,7 +173,7 @@ export default function App() {
                       />
                     </svg>
                     <div class="ml-4 text-sm sm:text-base tracking-wide font-semibold w-40">
-                      +91 8096598155
+                    +91 8096598155
                     </div>
                   </div>
 
@@ -183,276 +200,106 @@ export default function App() {
                   </div>
                 </div>
 
-                 {/*Contact Form*/}
-                 <div>
-        <form className="form" onSubmit={(e) => Submit(e)}>
-          <label>Name</label>
-          <br />
-          <input
-            placeholder="Your Name"
-            name="Name"
-            type="text"
-            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-          />
-          <br />
-          <label>Email</label>
-          <br />
-          <input
-            placeholder="Your Email"
-            name="Email"
-            type="text"
-            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-          />
-          <br />
-          <label>Subject</label>
-          <br />
-          <input
-            placeholder="Subject"
-            name="Subject"
-            type="text"
-            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-          />
-          <br />
-          <label>Message</label>
-          <br />
-          <input
-            placeholder="Your Message"
-            name="Message"
-            type="text"
-            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 pb-10"
-          />
-          <br />
-          <input
-            type="submit"
-            value="Submit"
-            className="block p-3 w-full text-sm bg-black text-white hover:text-black  hover:bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
-          />
-        </form>
-        <p className="pb-5 text-center">{message}</p>
-      </div>
 
+
+                <form onSubmit={handleSubmit} className="space-y-8 mx-5 my-5">
+                  <div>
+                  <label htmlFor="Name"
+                      className="text-black block mb-2 text-sm font-medium "> Name:
+        <input
+          type="text"
+          name="name"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   "
+                      placeholder="Sam"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+      </label>
+
+
+      <label htmlFor="phonenumber" className="text-black block mb-2 text-sm font-medium pt-2">
+        Phone number:
+        <input
+          type="phonenumber"
+          name="phonenumber"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   "
+                      placeholder="sam@mail.com"
+          value={formData.phonenumber}
+          onChange={handleChange}
+          required
+        />
+      </label>  
+                   
+      <label htmlFor="email" className="text-black block mb-2 text-sm font-medium pt-2">
+        Email:
+        <input
+          type="email"
+          name="email"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   "
+                      placeholder="sam@mail.com"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+      </label>            
+
+                   
+                   
+                  </div>
+                 
+
+                 
+
+                  <div className="sm:col-span-2">
+                  <label
+                      htmlFor="message"
+                      className="block mb-2 text-sm font-medium "
+                    >
+                      {" "}
+        <textarea
+          name="message"
+          className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 "
+                      placeholder="Leave a comment..."
+          value={formData.message}
+          onChange={handleChange}
+          required
+        ></textarea>
+      </label>
+      
+                   
+                   
+                  </div>
+                  
+                  <button
+                    type="submit"
+                    className="text-white bg-black block w-full rounded-3xl border  border-black px-12 py-3 text-sm font-medium   hover:text-black hover:bg-white  sm:w-auto"
+                  >
+                    Send Message
+                  </button>
+                  <div className="hidden">
+                    <input type="submit" />
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-   
-    
-  
-
-   {/*FAQ*/}
-   <div className="flex py-5">
-        <div className="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
-          <div className="flex flex-col items-center">
-            <h2 className="font-bold text-5xl mt-5 tracking-tight">FAQ</h2>
-           
-          </div>
-          <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
-            <div className="py-5">
-              <details className="group">
-                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                  <span> What is a modeling and finishing school?</span>
-                  <span className="transition group-open:rotate-180">
-                    <svg
-                      fill="none"
-                      height={24}
-                      shapeRendering="geometricPrecision"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </span>
-                </summary>
-                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                A modeling and finishing school is an institution that provides comprehensive training in various aspects of modeling and personal development. Our school focuses on enhancing not only modeling skills but also refining personal attributes such as poise, etiquette, and communication.
-                </p>
-              </details>
-            </div>
-            <div className="py-5">
-              <details className="group">
-                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                  <span> Who can enroll in the modeling and finishing school?</span>
-                  <span className="transition group-open:rotate-180">
-                    <svg
-                      fill="none"
-                      height={24}
-                      shapeRendering="geometricPrecision"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </span>
-                </summary>
-                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                Our programs are open to individuals of all ages and backgrounds who are passionate about pursuing a career in modeling or wish to enhance their personal and professional development. We welcome beginners as well as those with some prior experience in the field.
-                </p>
-              </details>
-            </div>
-            <div className="py-5">
-              <details className="group">
-                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                  <span>
-                    {" "}
-                    What programs do you offer?
-                  </span>
-                  <span className="transition group-open:rotate-180">
-                    <svg
-                      fill="none"
-                      height={24}
-                      shapeRendering="geometricPrecision"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </span>
-                </summary>
-                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                We offer a range of programs tailored to meet the diverse needs of our students. Our offerings include modeling courses, grooming and etiquette classes, personal development workshops, and specialized training sessions. Whether you're interested in runway modeling, photography, or overall personality development, we have a program for you.
-                </p>
-              </details>
-            </div>
-            <div className="py-5">
-              <details className="group">
-                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                  <span>
-                    {" "}
-                    How long are the courses, and what is the time commitment?
-                  </span>
-                  <span className="transition group-open:rotate-180">
-                    <svg
-                      fill="none"
-                      height={24}
-                      shapeRendering="geometricPrecision"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </span>
-                </summary>
-                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                The duration of our courses varies based on the program. Typically, courses range from a few weeks to one month. The time commitment also depends on the specific program, with options for both online and offline courses.
-                </p>
-              </details>
-            </div>
-            <div className="py-5">
-              <details className="group">
-                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                  <span>
-                    {" "}
-                    What skills will I learn in the modeling program?
-
-                  </span>
-                  <span className="transition group-open:rotate-180">
-                    <svg
-                      fill="none"
-                      height={24}
-                      shapeRendering="geometricPrecision"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </span>
-                </summary>
-                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                Our modeling program covers a wide array of skills, including runway techniques, posing, photo shoots, makeup application, and more. We also focus on building self-confidence and developing a strong personal brand, essential for success in the modeling industry.
-                </p>
-              </details>
-            </div>
-            <div className="py-5">
-              <details className="group">
-                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                  <span>
-                    {" "}
-                    How can I apply for admission?
-
-                  </span>
-                  <span className="transition group-open:rotate-180">
-                    <svg
-                      fill="none"
-                      height={24}
-                      shapeRendering="geometricPrecision"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </span>
-                </summary>
-                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                You can apply for admission through our online application portal on our website. Simply fill out the application form, submit the required documents, and follow the instructions provided. Our admissions team will review your application, and you will be contacted for further steps.
-                </p>
-              </details>
-            </div>
-            <div className="py-5">
-              <details className="group">
-                <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                  <span>
-                    {" "}
-                    How can I stay updated on upcoming events and workshops?
 
 
-                  </span>
-                  <span className="transition group-open:rotate-180">
-                    <svg
-                      fill="none"
-                      height={24}
-                      shapeRendering="geometricPrecision"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </span>
-                </summary>
-                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                To stay informed about our latest events, workshops, and news, you can know through our website. Additionally, follow us on our social media channels for real-time updates and behind-the-scenes glimpses of our school activities.
-                </p>
-              </details>
-            </div>
-   
-        
-         
-            {/* Add more FAQ questions here using the same structure */}
-          </div>
-        </div>
 
-        
-  </div>
-  
-    </main>
+ 
+
+     
+    </div>
   );
-}
+};
+
+
+
+
+
+
+export default ContactForm;
