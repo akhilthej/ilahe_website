@@ -1,3 +1,15 @@
+import FinishingCoverEmpower from '../../assets/CoverImages/finishingschoolserviceimage.jpeg';
+import ModelingschoolEmpower from '../../assets/CoverImages/modelingschoolserviceimage.jpeg'
+import Application from '../../assets/CoverImages/application.jpeg'
+import embark from '../../assets/CoverImages/embark.jpg'
+
+import ModelingSchool from '../../assets/CoverImages/modelingschool.png'
+import FinishingSchool1 from '../../assets/CoverImages/finishingschool.png'
+import Aboutus1 from '../../assets/CoverImages/aboutus.png'
+import MoreDetails from '../../assets/CoverImages/moredetails.png'
+
+import BlogCover from '../../assets/CoverImages/blog.webp'
+
 const GlobalData = {
     company: {
       companyName: 'ilahe',
@@ -8,12 +20,20 @@ const GlobalData = {
       companyGoogleMaps:'https://g.page/r/Cbdbq2SKZJyVEAI/review',
     },
     Coverimages: {
-        HomeCover: 'https://drive.google.com/uc?id=1-RKGIgPQ6gfNDnoW1jr6R_TzB9P_12ge',
-        ModelingCover: 'https://drive.google.com/uc?id=1GdlC2fDHCMiwUi2UQJcVzuOmUeP-lCJU',
-        FinishingCover: 'https://drive.google.com/uc?id=1e6hp0YZQ-q-NTF1e3EErzlO6At-0GPNM',
-        BlogCover:'https://drive.google.com/uc?id=1-RKGIgPQ6gfNDnoW1jr6R_TzB9P_12ge',
-        AboutCover: 'https://drive.google.com/uc?id=13aTpKKYjEEqkL3iBvUH-cLaly7LuoPso',
-        ContactusCover:'https://drive.google.com/uc?id=1-RKGIgPQ6gfNDnoW1jr6R_TzB9P_12ge',
+       
+        BlogCover:BlogCover,
+        
+
+        FinishingCoverEmpower: FinishingCoverEmpower,
+        ModelingschoolEmpower:ModelingschoolEmpower,
+        Application:Application,
+        embark:embark,
+        ModelingSchool: ModelingSchool,
+        FinishingSchool1: FinishingSchool1,
+        Aboutus1: Aboutus1,
+        MoreDetails: MoreDetails,
+
+
     },
 }
 

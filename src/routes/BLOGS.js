@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async';
-import {Link} from 'react-router-dom';
+import { GlobalData } from '../components/data/GlobalData';
 
 import {BlogVideo} from '../components/data/data';
 
@@ -17,18 +17,18 @@ const TECHNOLOGIES = () => {
 <main>
 
  {/* Title Card */}
- <section className="py-28 sm:py-40" style={{ backgroundImage: 'url("https://drive.google.com/uc?id=1YOJ-Sjp3oiidK-JivRLm10UzunYuryOg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+ <section className="py-28 sm:py-40" style={{ backgroundImage: `url(${GlobalData.Coverimages.BlogCover})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
   <div className="flex flex-col items-center md:flex-row justify-center">
     <div className="md:w-1/2 md:pr-10">
      
     </div>
     <div className="md:w-1/2 px-5">
       <div className="text-right md:text-left"> {/* Align titles to the right on mobile, left on larger screens */}
-        <h1 className="text-2xl pb-5 md:text-6xl fade-in-down font-extrabold text-center text-white tracking-tight">
+        <h1 className="text-2xl pb-5 md:text-6xl fade-in-down font-extrabold text-center text-black tracking-tight">
         Blogs & Research
         </h1>
-        <p className="text-white sm:text-sm text-xs text-center sm:ml-0">
-        Research done for our project and Technologies we use for our community.
+        <p className="text-black sm:text-sm text-xs text-center sm:ml-0">
+        Few Helpful tips for our community.
         </p>
 
        

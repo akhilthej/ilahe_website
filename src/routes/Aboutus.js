@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 import { GlobalData } from '../components/data/GlobalData';
-import AboutSubcover from '../assets/CoverImages/AboutSubcover.jpg'
+import AboutSubcover from '../assets/CoverImages/AboutSubcover1.jpg'
 import About2 from '../assets/CoverImages/About2.png'
 import About3 from '../assets/CoverImages/About3.webp'
 
@@ -21,7 +21,7 @@ const Aboutus = () => {
      <section
   className="py-10 sm:py-48"
   style={{
-    backgroundImage: `url(${GlobalData.Coverimages.AboutCover})`,
+    backgroundImage: `url(${GlobalData.Coverimages.Aboutus1})`,
     backgroundSize: "cover",
     backgroundPosition: "top",
   }}>
@@ -86,8 +86,7 @@ const Aboutus = () => {
             backgroundImage:`url(${AboutSubcover})`,
             backgroundSize: "cover",
             backgroundPosition: "top",
-          }}
-        >
+          }}>
           <div className="cursor-default py-40 flex flex-col items-center justify-center bg-black/70">
             <div className="text-center">
               <h2 className="font-extrabold text-transparent text-4xl md:text-5xl lg:text-8xl bg-clip-text bg-pink-400 tracking-tight ">

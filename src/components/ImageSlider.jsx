@@ -1,35 +1,32 @@
 import React, { useState, useEffect } from "react";
+import { GlobalData } from "../components/data/GlobalData";
 
 const ImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
     {
-      url:
-        'https://drive.google.com/uc?id=1GdlC2fDHCMiwUi2UQJcVzuOmUeP-lCJU',
+      url:GlobalData.Coverimages.ModelingSchool,
       title: 'Modeling School',
       description: 'skills, confidence, professionalism',
       button1: { text: 'Learn More', link: '/best-modeling-school-in-india' },
       button2: { text: 'Contact us', link: 'https://api.whatsapp.com/send?phone=+918096598155' },
     },
     {
-      url:
-        'https://drive.google.com/uc?id=1e6hp0YZQ-q-NTF1e3EErzlO6At-0GPNM',
+      url:GlobalData.Coverimages.FinishingSchool1,
       title: 'Finishing School',
       description: 'etiquette, grooming, self-confidence , communication',
       button1: { text: 'Learn More', link: '/best-Finishing-school-in-india' },
       button2: { text: 'Contact Us', link: 'https://api.whatsapp.com/send?phone=+918096598155' },
     },
     {
-      url:
-        'https://drive.google.com/uc?id=13aTpKKYjEEqkL3iBvUH-cLaly7LuoPso',
+      url:GlobalData.Coverimages.Aboutus1,
       title: 'About ilahe',
       description: 'selflove , empowerment, inspiration',
       button1: { text: 'Explore', link: '/aboutus' },
       button2: { text: 'Contact Us', link: 'https://api.whatsapp.com/send?phone=+918096598155' },
     },
     {
-      url:
-        'https://drive.google.com/uc?id=1paWE-bgGtX4l-tHMj5uMv0WIBcV82y3s',
+      url:GlobalData.Coverimages.MoreDetails,
       title: 'Need More Details?',
       description: 'build trust , leave  impression, quality',
       button1: { text: 'Email', link: 'mailto:admin@ilahe.in' },

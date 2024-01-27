@@ -26,7 +26,7 @@ const FinishingSchool = () => {
       </Helmet>
 
      {/* Title Card */}
-     <section className="py-20 sm:py-40" style={{ backgroundImage: `url(${GlobalData.Coverimages.FinishingCover})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+     <section className="py-20 sm:py-40" style={{ backgroundImage: `url(${GlobalData.Coverimages.FinishingSchool1})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
      <div className="flex flex-col items-center md:flex-row justify-center">
        <div className="md:w-1/2 md:pr-10">
         

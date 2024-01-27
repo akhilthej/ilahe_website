@@ -6,7 +6,6 @@ import Brand_slider from "../components/Brand_slider";
 import { HomeVideo } from "../components/data/data";
 import ImageSlider from "../components/ImageSlider";
 
-
 import { GlobalData } from "../components/data/GlobalData";
 
 import {SelfGromming,Training,PersonalGrowth,ProfessionalDevelopment,} from '../components/data/data'
@@ -114,7 +113,7 @@ const Home = () => {
 <div className="flex flex-wrap justify-center -mx-4  text-center">
   <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
     <div className="flex justify-center items-center">
-      <div class='rounded-xl shadow-xl' style={{ backgroundImage: `url('https://drive.google.com/uc?id=18cRPgqsw0b9k1ahK4km_F3yENEEZ3XA6')`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', paddingTop: '100%' }} className="shadow-lg mb-2 bg-gray-50 border-b border-gray-100"></div>
+      <div class='rounded-xl shadow-xl' style={{ backgroundImage: `url(${GlobalData.Coverimages.ModelingschoolEmpower})`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', paddingTop: '100%' }} className="shadow-lg mb-2 bg-gray-50 border-b border-gray-100"></div>
     </div>
     <h3 className="text-lg leading-normal my-2 font-bold text-black">
       Modeling school
@@ -130,7 +129,7 @@ const Home = () => {
   {/* "Finishing" section */}
   <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/4 lg:px-16">
     <div className=" flex justify-center items-center">
-      <div class='rounded-xl shadow-xl' style={{ backgroundImage: `url('https://drive.google.com/uc?id=14zSYysncdQWpp2V86ff1g9LRrvOvu6xd')`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', paddingTop: '100%' }} className="shadow-lg mb-2 bg-gray-50 border-b border-gray-100"></div>
+      <div class='rounded-xl shadow-xl' style={{ backgroundImage: `url(${GlobalData.Coverimages.FinishingCoverEmpower})`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', paddingTop: '100%' }} className="shadow-lg mb-2 bg-gray-50 border-b border-gray-100"></div>
     </div>
     <h3 className="text-lg leading-normal my-2 font-bold text-black">
       Finishing school
@@ -151,8 +150,7 @@ const Home = () => {
         {/* WE BUILD */}
         <section
           style={{
-            backgroundImage:
-              'url("https://drive.google.com/uc?id=1LwEvhrFdftC39JIdzJpjD7OeTKRdtJLr")',
+            backgroundImage: `url(${GlobalData.Coverimages.embark})`,
             backgroundSize: "cover",
             backgroundPosition: "top",
           }}
@@ -247,7 +245,7 @@ const Home = () => {
                 <div className=" lg:flex lg:items-center lg:w-1/2 lg:justify-center ">
                   <img
                     className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] "
-                    src="https://drive.google.com/uc?id=1oVnDrMzZySqJ8S6h_nu0wfw9YwyPlhrs"
+                    src={GlobalData.Coverimages.Application}
                     alt=""
                   />
                 </div>
