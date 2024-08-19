@@ -22,19 +22,19 @@ const Navbar = () => {
           <ul className="flex items-center">
             <Menu as="div" className="relative inline-block text-left ">
             </Menu>
+            <Link to="/best-modeling-school-in-india">
             <li className="p-4 text-sm hidden lg:block font-medium antialiased rounded-md  px-4 py-2   text-black hover:bg-yellow-500  focus:outline-none">
-              <Link to="/best-modeling-school-in-india">Modeling</Link>
-            </li>
-
+             Modeling
+            </li></Link>
+            <Link to="/best-Finishing-school-in-india">
             <li className="p-4 text-sm hidden lg:block font-medium antialiased rounded-md  px-4 py-2   text-black hover:bg-yellow-500  focus:outline-none">
-              <Link to="/best-Finishing-school-in-india">Finishing School</Link>
-            </li>
+              Finishing School
+            </li></Link>
+          
+            <Link to="/blogs">
             <li className="p-4 text-sm hidden lg:block font-medium antialiased rounded-md  px-4 py-2   text-black hover:bg-yellow-500  focus:outline-none">
-              <Link to="/reviews">Reviews</Link>
-            </li>
-            <li className="p-4 text-sm hidden lg:block font-medium antialiased rounded-md  px-4 py-2   text-black hover:bg-yellow-500  focus:outline-none">
-              <Link to="/blogs">Blogs</Link>
-            </li>
+              Blogs
+            </li></Link>
             <li className="p-4">
               <Menu as="div" className="relative inline-block text-left  ">
                 <div>
