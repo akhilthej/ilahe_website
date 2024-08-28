@@ -13,7 +13,8 @@ import BlogCover from '../../assets/CoverImages/blog.webp'
 const GlobalData = {
     company: {
       companyName: 'ilahe',
-      companyPhone: '+918096598155',
+      companyPhone: '+91 8096598155',
+      companyPhone2: '+91 7893350700',
       companyEmail: 'admin@ilahe.in',
       companyAddress: 'fifth floor, ABACUS TOWERS, 501, beside Gvk One Mall, Banjara Hills, Hyderabad, Telangana 500082',
       companyWhatsapp: 'https://api.whatsapp.com/send?phone=+918096598155',
