@@ -122,7 +122,10 @@ const ContactForm = () => {
                     Fill in the form to start a conversation
                   </p>
 
-                  <div class="flex items-center mt-8 text-black">
+                  <p class="text-center sm:text-left text-normal text-lg sm:text-2xl font-medium text-black mt-2">
+                    Hyderabad
+                  </p>
+                  <div class="flex items-center text-black">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -149,6 +152,40 @@ const ContactForm = () => {
                       fifth floor, ABACUS TOWERS, 501, <br />
                       beside Gvk One Mall, Banjara Hills, <br />
                       Hyderabad, Telangana 500082.
+                    </div>
+                  </div>
+
+                  <p class="text-center sm:text-left text-normal text-lg sm:text-2xl font-medium text-black mt-2">
+                    Visakhapatnam
+                  </p>
+
+                  <div class="flex items-center text-black">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      viewBox="0 0 24 24"
+                      class="w-8 h-8 text-gray-500"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    <div class="ml-2 text-sm sm:text-base text-md tracking-wide font-semibold w-">
+                    Neelus store building fourth floor ,  <br />
+                    HB Colony Rd, next to BODY SHOP, Hill View Doctors Colony,  <br />
+                    Seethammadara, Visakhapatnam, Andhra Pradesh 530016, India.
                     </div>
                   </div>
 
