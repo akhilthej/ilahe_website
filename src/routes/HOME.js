@@ -1,13 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet-async"; // Import Helmet
 import Brandslider from "../components/Brand_slider";
-
 import { HomeVideo } from "../components/data/data";
 import ImageSlider from "../components/ImageSlider";
-
 import { GlobalData } from "../components/data/GlobalData";
-
 import {
   SelfGromming,
   Training,
@@ -18,33 +15,44 @@ import {
 const Home = () => {
   return (
     <>
-      <main className=" overflow-hidden">
+      <Helmet>
+        <title>Ilahe Modeling and Finishing School</title>
+        <meta name="description" content="Join Ilahe Modeling and Finishing School to enhance your modeling skills and personal growth. Apply now to embark on a journey of self-discovery and confidence." />
+        <meta name="keywords" content="modeling school, finishing school, personal growth, professional development, confidence, self-discovery" />
+        <meta name="author" content="Ilahe" />
+        <link rel="canonical" href="https://ilahe.in/" />
+        {/* Add Open Graph tags for social media sharing */}
+        <meta property="og:title" content="Ilahe Modeling and Finishing School" />
+        <meta property="og:description" content="Join Ilahe Modeling and Finishing School to enhance your modeling skills and personal growth. Apply now to embark on a journey of self-discovery and confidence." />
+        <meta property="og:image" content="URL_to_your_image" />
+        <meta property="og:url" content="https://ilahe.in/" />
+        <meta property="og:type" content="modeling school, finishing school, personal growth, professional development, confidence, self-discovery." />
+      </Helmet>
+      <main className="overflow-hidden">
         <ImageSlider />
 
-        {/*herosection */}
-
-        <section class="flex items-center my-5 justify-center  bg-white">
-          <div class="mx-auto max-w-[55rem]">
-            <div class="text-center">
-              <null class="cursor-default text-sm sm:text-2xl font-extrabold leading-8 text-gray-900">
+        {/* Hero Section */}
+        <section className="flex items-center my-5 justify-center bg-white">
+          <div className="mx-auto max-w-[55rem]">
+            <div className="text-center">
+              <null className="cursor-default text-sm sm:text-2xl font-extrabold leading-8 text-gray-900">
                 FASHION . STYLE . EXECUTIVE
               </null>
-              <h1 class="cursor-default pb-0 sm:pb-5 upanddown font-extrabold text-transparent text-4xl md:text-7xl lg:text-8xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3 leading-[3.5rem] tracking-tight">
+              <h1 className="cursor-default pb-0 sm:pb-5 upanddown font-extrabold text-transparent text-4xl md:text-7xl lg:text-8xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3 leading-[3.5rem] tracking-tight">
                 Ilahe
               </h1>
-
-              <p class="cursor-default text-sm sm:text-xl font-extrabold leading-8 text-gray-900">
+              <p className="cursor-default text-sm sm:text-xl font-extrabold leading-8 text-gray-900">
                 Modeling and Finishing School
               </p>
             </div>
-            <div class="mt-6 flex items-center justify-center gap-4 flex-wrap">
+            <div className="mt-6 flex items-center justify-center gap-4 flex-wrap">
               <a href="/contactus">
-                <button class="text-xs sm:text-sm transform rounded bg-pink-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">
+                <button className="text-xs sm:text-sm transform rounded bg-pink-500 border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-slate-50">
                   Apply Now
                 </button>
               </a>
               <a href="https://api.whatsapp.com/send?phone=+918096598155&text=Hi,%20i%20am%20looking%20some%20information.">
-                <button class="text-xs sm:text-sm transform rounded border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-orange-600 hover:text-black">
+                <button className="text-xs sm:text-sm transform rounded border border-slate-200 px-12 py-2 font-medium text-black transition-colors hover:bg-orange-600 hover:text-black">
                   Whatsapp
                 </button>
               </a>
@@ -70,15 +78,13 @@ const Home = () => {
         </div>
 
         {/* Tagline */}
-        <section className="flex items-center my-10 justify-center  bg-white ">
+        <section className="flex items-center my-10 justify-center bg-white ">
           <div className="mx-auto max-w-[55rem]">
             <div className="text-center">
-              <p className="cursor-default text-sm sm:text-4xl font-extrabold  text-gray-900">
-                Polishing Dreams, Shaping Futures – Your Confidence, Our
-                Commitment.
+              <p className="cursor-default text-sm sm:text-4xl font-extrabold text-gray-900">
+                Polishing Dreams, Shaping Futures – Your Confidence, Our Commitment.
               </p>
-
-              <p className="cursor-default text-sm sm:text-xl pt-5  text-gray-900">
+              <p className="cursor-default text-sm sm:text-xl pt-5 text-gray-900">
                 Empowering Lives, One Stride at a Time.
               </p>
             </div>
@@ -97,13 +103,13 @@ const Home = () => {
         <Brandslider />
 
         {/* Services */}
-        {/*Line of Engagement */}
+        {/* Line of Engagement */}
         <section className="cursor-default section relative w-screen bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500">
           <div className="xl:max-w-8xl mx-auto px-4 h-full flex flex-col justify-center">
             {/* Heading for "Line of Engagement" section */}
             <section className="text-center mx-auto mb-8 lg:px-20">
               <p className="text-lg sm:text-xl font-medium text-black mt-5">
-                Explore ilahe Modeling and Finishing School's Digital Home.
+                Explore Ilahe Modeling and Finishing School's Digital Home.
               </p>
               <h2 className="pb-2 font-extrabold text-white text-2xl md:text-4xl lg:text-5xl xl:text-6xl ">
                 Empowering Your Journey, One Click at a Time.
@@ -206,14 +212,14 @@ const Home = () => {
           </div>
         </section>
 
-        {/*Who is it for? */}
+        {/* Who is it for? */}
         <section>
           <div className="cursor-default px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div className="max-w-screen-md mb-8 lg:mb-16">
               <h2 className="font-extrabold text-transparent text-4xl md:text-5xl lg:text-8xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3 text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] leading-[3.5rem] tracking-tight text-black">
                 Who is it for?
               </h2>
-              <p className=" cursor-default text-sm sm:text-xl text-gray-900 ">
+              <p className="cursor-default text-sm sm:text-xl text-gray-900 ">
                 <li>People seeking a professional and personal life balance</li>
                 <li>Professionals who wish to enhance their career life</li>
                 <li>Ladies looking for exposure in a different field</li>
@@ -230,10 +236,10 @@ const Home = () => {
           </div>
         </section>
 
-        {/*Explore */}
-        <section className="cursor-default px-6  mx-auto bg-black">
+        {/* Explore */}
+        <section className="cursor-default px-6 mx-auto bg-black">
           <section>
-            <div className="cursor-default container px-6  mx-auto bg-black">
+            <div className="cursor-default container px-6 mx-auto bg-black">
               <div className="lg:flex lg:items-center ">
                 <div className="w-full space-y-12 lg:w-1/2 ">
                   <div>
@@ -268,14 +274,14 @@ const Home = () => {
                         <li>
                           You do not need Professional Photographs to apply.
                         </li>
-                        <li>No selfies , Please ask a friend to help you.</li>
+                        <li>No selfies, please ask a friend to help you.</li>
                         <li>No sunglasses or hats.</li>
                         <li>No or minimal make-up and no filters.</li>
                         <li>Try to use natural light.</li>
                         <li>Photographs must be in color and in focus.</li>
                         <li>
                           Please try to upload at least one full length and one
-                          close up picture.
+                          close-up picture.
                         </li>
                         <p className="text-sm pt-5">
                           Once you have made your application, we will do our
@@ -284,18 +290,18 @@ const Home = () => {
                           quote your full name and email address.
                         </p>
                         <p className="text-sm">
-                          While your waiting to hear back,keep up to date with
+                          While you're waiting to hear back, keep up to date with
                           ILAHE by following us on social media.
                         </p>
                       </h2>
                     </div>
                   </div>
                 </div>
-                <div className=" lg:flex lg:items-center lg:w-1/2 lg:justify-center ">
+                <div className="lg:flex lg:items-center lg:w-1/2 lg:justify-center ">
                   <img
                     className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] "
                     src={GlobalData.Coverimages.Application}
-                    alt=""
+                    alt="Application Guidelines"
                   />
                 </div>
               </div>
@@ -303,14 +309,13 @@ const Home = () => {
           </section>
         </section>
 
-        {/*Line of Engagement */}
+        {/* Line of Engagement */}
         <section
           id="services"
           className="cursor-default section relative pt-10 pb-8 md:pt-16 md:pb-10"
         >
           <div className="xl:max-w-8xl mx-auto px-4">
             {/* Heading for "Line of Engagement" section */}
-
             <section className="text-center mx-auto mb-12 lg:px-20">
               <h2 className="pb-2 font-extrabold text-transparent text-2xl md:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3 ">
                 Unlock Your Potential Online
@@ -340,7 +345,7 @@ const Home = () => {
                     <img
                       src={SelfGromming}
                       className="w-40 ml-auto"
-                      alt="illustration"
+                      alt="Personalized Growth"
                       loading="lazy"
                       width={900}
                       height={600}
@@ -376,7 +381,7 @@ const Home = () => {
                     <img
                       src={Training}
                       className="w-40 ml-auto"
-                      alt="illustration"
+                      alt="Industry-Relevant Training"
                       loading="lazy"
                       width={900}
                       height={600}
@@ -412,7 +417,7 @@ const Home = () => {
                     <img
                       src={PersonalGrowth}
                       className="w-40 ml-auto"
-                      alt="illustration"
+                      alt="Professional Development"
                       loading="lazy"
                       width={900}
                       height={600}
@@ -448,7 +453,7 @@ const Home = () => {
                     <img
                       src={ProfessionalDevelopment}
                       className="w-40 ml-auto"
-                      alt="illustration"
+                      alt="Supportive Community"
                       loading="lazy"
                       width={900}
                       height={600}
@@ -472,8 +477,8 @@ const Home = () => {
 
         {/* "Documentation" section */}
         <section className="text-center mx-auto my-8">
-          <h2 className="cursor-default pb-2 font-extrabold text-transparent text-2xl md:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3  tracking-tight ">
-            Need Help ?
+          <h2 className="cursor-default pb-2 font-extrabold text-transparent text-2xl md:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 mt-3 tracking-tight ">
+            Need Help?
           </h2>
           <p className="cursor-default text-sm font-medium text-black mt-5 mb-10">
             By choosing Ilahe Modeling and Finishing School, you invest in more
@@ -498,8 +503,6 @@ const Home = () => {
           </div>
         </section>
       </main>
-      {/*        <a href={`tel:${GlobalData.company.companyPhone}`}></a>
-<a href={`mailto:${GlobalData.company.companyEmail}`}></a> */}
     </>
   );
 };
