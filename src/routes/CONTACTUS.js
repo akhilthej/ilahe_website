@@ -10,8 +10,8 @@ const ContactForm = () => {
     email: "",
     phonenumber: "",
     message: "",
-    honeypot: "", // honeypot field
-    captcha: "", // CAPTCHA field
+    honeypot: "",
+    captcha: "",
   });
 
   const [captchaAnswer, setCaptchaAnswer] = useState(Math.floor(Math.random() * 10));
@@ -27,12 +27,10 @@ const ContactForm = () => {
     if (isSubmitting) return;
 
     if (formData.honeypot !== "") {
-      // honeypot field is filled, likely a bot
       return;
     }
 
     if (Number(formData.captcha) !== 2 + captchaAnswer) {
-      // CAPTCHA answer is incorrect
       alert("Invalid CAPTCHA answer. Please try again.");
       return;
     }
