@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ModelingPriceTableOffline = () => {
   return (
@@ -23,9 +23,9 @@ const ModelingPriceTableOffline = () => {
                     </h1>
                     <h2 className="text-sm text-gray-500 text-center pb-6">
                       <span className="text-3xl"> 5,500 INR</span> <br />
-                     
                     </h2>
-                    Stripe offers everything needed to run an online business at scale. Get in touch for details.
+                    Stripe offers everything needed to run an online business at
+                    scale. Get in touch for details.
                   </div>
                   <div className="flex flex-wrap mt-3 px-6">
                     <ul>
@@ -46,7 +46,9 @@ const ModelingPriceTableOffline = () => {
                             <polyline points="22 4 12 14.01 9 11.01" />
                           </svg>
                         </div>
-                        <span className="text-gray-700 text-lg ml-3">3 days classes</span>
+                        <span className="text-gray-700 text-lg ml-3">
+                          3 days classes
+                        </span>
                       </li>
                       <li className="flex items-center">
                         <div className="rounded-full p-2 fill-current text-green-700">
@@ -65,12 +67,15 @@ const ModelingPriceTableOffline = () => {
                             <polyline points="22 4 12 14.01 9 11.01" />
                           </svg>
                         </div>
-                        <span className="text-gray-700 text-lg ml-3">2 hours session</span>
+                        <span className="text-gray-700 text-lg ml-3">
+                          2 hours session
+                        </span>
                       </li>
                     </ul>
                   </div>
                   <div className="block flex items-center p-8 uppercase">
-                    <a href='/best-modeling-school-in-basic'
+                    <a
+                      href="/best-modeling-school-in-basic"
                       className="mt-3 text-lg font-semibold 
                       bg-black w-full text-white rounded-lg text-center
                       px-6 py-3 block shadow-xl hover:bg-gray-700"
@@ -91,9 +96,9 @@ const ModelingPriceTableOffline = () => {
                   </h1>
                   <h2 className="text-sm text-gray-500 text-center pb-6">
                     <span className="text-3xl"> 35,000 INR</span> <br />
-                   
                   </h2>
-                  Stripe offers everything needed to run an online business at scale. Get in touch for details.
+                  Stripe offers everything needed to run an online business at
+                  scale. Get in touch for details.
                 </div>
                 <div className="flex pl-12 justify-start sm:justify-start mt-3">
                   <ul>
@@ -114,12 +119,15 @@ const ModelingPriceTableOffline = () => {
                           <polyline points="22 4 12 14.01 9 11.01" />
                         </svg>
                       </div>
-                      <span className="text-gray-700 text-lg ml-3">15 days</span>
+                      <span className="text-gray-700 text-lg ml-3">
+                        15 days
+                      </span>
                     </li>
                   </ul>
                 </div>
                 <div className="block flex items-center p-8 uppercase">
-                  <a href='/best-modeling-school-in-expert'
+                  <a
+                    href="/best-modeling-school-in-expert"
                     className="mt-3 text-lg font-semibold 
                     bg-black w-full text-white rounded-lg text-center
                     px-6 py-3 block shadow-xl hover:bg-gray-700"
@@ -132,14 +140,15 @@ const ModelingPriceTableOffline = () => {
                 <div className="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
                   <div className="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
                     <h1 className="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
-                      Elite<br />
+                      Elite
+                      <br />
                       Offline 7 Days
                     </h1>
                     <h2 className="text-sm text-gray-500 text-center pb-6">
                       <span className="text-3xl"> 14,000 INR</span> <br />
-                     
                     </h2>
-                    Stripe offers everything needed to run an online business at scale. Get in touch for details.
+                    Stripe offers everything needed to run an online business at
+                    scale. Get in touch for details.
                   </div>
                   <div className="flex flex-wrap mt-3 px-6">
                     <ul>
@@ -160,12 +169,15 @@ const ModelingPriceTableOffline = () => {
                             <polyline points="22 4 12 14.01 9 11.01" />
                           </svg>
                         </div>
-                        <span className="text-gray-700 text-lg ml-3">7 days</span>
+                        <span className="text-gray-700 text-lg ml-3">
+                          7 days
+                        </span>
                       </li>
                     </ul>
                   </div>
                   <div className="block flex items-center p-8 uppercase">
-                    <a href='/best-modeling-school-in-elite'
+                    <a
+                      href="/best-modeling-school-in-elite"
                       className="mt-3 text-lg font-semibold 
                       bg-black w-full text-white rounded-lg text-center
                       px-6 py-3 block shadow-xl hover:bg-gray-700"
@@ -185,15 +197,21 @@ const ModelingPriceTableOffline = () => {
             </h2>
             <div className="flex flex-col items-center mt-6">
               <div className="bg-white text-black rounded-lg shadow-lg p-6 mb-4 w-full max-w-md">
-                <h3 className="text-lg font-medium">One-on-One Personalized Training</h3>
+                <h3 className="text-lg font-medium">
+                  One-on-One Personalized Training
+                </h3>
                 <p className="text-xl text-gray-700">₹45,000</p>
               </div>
               <div className="bg-white text-black rounded-lg shadow-lg p-6 mb-4 w-full max-w-md">
-                <h3 className="text-lg font-medium">Full Makeup Course (15 days)</h3>
+                <h3 className="text-lg font-medium">
+                  Full Makeup Course (15 days)
+                </h3>
                 <p className="text-xl text-gray-700">₹30,000</p>
               </div>
               <div className="bg-white text-black rounded-lg shadow-lg p-6 mb-4 w-full max-w-md">
-                <h3 className="text-lg font-medium">High-End Portfolio Shoot</h3>
+                <h3 className="text-lg font-medium">
+                  High-End Portfolio Shoot
+                </h3>
                 <p className="text-xl text-gray-700">₹45,000</p>
               </div>
             </div>
@@ -202,6 +220,6 @@ const ModelingPriceTableOffline = () => {
       </section>
     </main>
   );
-}
+};
 
 export default ModelingPriceTableOffline;

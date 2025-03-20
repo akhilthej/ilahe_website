@@ -5,7 +5,7 @@ const ExpertFinishingSchool = () => {
     <div className="cursor-default section relative bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">
-          LEVEL-EXPERT FINISHING SCHOOL
+          LEVEL-EXPERT FINISHING SCHOOL (15 Days)
         </h2>
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="bg-white rounded-lg p-6 shadow-md">
@@ -18,63 +18,23 @@ const ExpertFinishingSchool = () => {
           </div>
           <div className="bg-white rounded-lg p-6 shadow-md">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              EFFECTIVE COMMUNICATION
+              COLOUR ANALYSIS & WARDROBE STYLING
             </h3>
             <p className="text-gray-600 mb-4">
-              Learn how to communicate in corporate English. Recognize different personality types and communicate accordingly. Understand the art of mingling, small talk, and other conversational skills.
+              Discover how to choose colors that complement your skin tone and enhance your overall appearance. Learn wardrobe styling techniques to create versatile outfits for various occasions.
             </p>
           </div>
           <div className="bg-white rounded-lg p-6 shadow-md">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              SOCIAL & BUSINESS ETIQUETTE
+              PROFESSIONAL NETWORKING & SOCIAL SKILLS
             </h3>
             <p className="text-gray-600 mb-4">
-              Learn about social graces and party etiquette. Improve your magnetic leadership abilities and etiquette. Master interview techniques and presentation skills.
-            </p>
-          </div>
-          <div className="bg-white rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              DEPORTMENT
-            </h3>
-            <p className="text-gray-600 mb-4">
-              Learn the skill of sitting, standing, and walking with proper posture and a lovely gait. Carry your distinctive elegance in a ladylike manner when getting in or out of a car or going up and down a staircase.
-            </p>
-          </div>
-          <div className="bg-white rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              FASHION BASICS & STYLING
-            </h3>
-            <p className="text-gray-600 mb-4">
-              Master the art of dressing and styling. Understand body forms, accessorizing, and power dressing. Discover new clothing trends and create a fresh wardrobe to refresh your personal style.
-            </p>
-          </div>
-          <div className="bg-white rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              MAKEUP
-            </h3>
-            <p className="text-gray-600 mb-4">
-              Learn makeup techniques ranging from basic to nude, as well as additional party or workday looks. Explore eye makeup techniques, hair styling, and hair maintenance that complements facial structure and contours. Provide tailored hair and makeup consultations.
-            </p>
-          </div>
-          <div className="bg-white rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              SELF-GROOMING
-            </h3>
-            <p className="text-gray-600 mb-4">
-              Learn how to care for your skin, complexion, hair, and scalp. Discover common personal care tips. Explore traditional and trendy saree draping styles and develop the confidence to assist others in adapting to changing situations.
-            </p>
-          </div>
-          <div className="bg-white rounded-lg p-6 shadow-md">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              COUNSELING
-            </h3>
-            <p className="text-gray-600">
-              Develop skills in wellness management, self-management, behavior management, work-life balance, and relationship management.
+              Master the art of networking and develop essential social skills to build meaningful professional relationships. Learn how to navigate social settings with confidence and poise.
             </p>
           </div>
         </div>
         <div className="text-center mt-8">
-        <a href='https://api.whatsapp.com/send?phone=+918096598155&text=Applying for LEVEL-Expert FINISHING SCHOOL' className="bg-black text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-gray-600">
+          <a href='https://api.whatsapp.com/send?phone=+918096598155&text=Applying for LEVEL-Expert FINISHING SCHOOL' className="bg-black text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-gray-600">
             Apply
           </a>
         </div>

@@ -5,40 +5,39 @@ const EliteModeling = () => {
     <div className="cursor-default section relative bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">
-          LEVEL-ELITE MODELING
+          LEVEL-ELITE MODELING (7 Days)
         </h2>
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="bg-white rounded-lg p-6 shadow-md">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Modeling Industry Overview
+              RUNWAY TRAINING & EXPRESSIONS
             </h3>
             <p className="text-gray-600 mb-4">
-              Explore the past, present, and future of the modeling industry. Understand the different types of modeling, the origins of fashion, and the tactics for catwalk posing.
+              Master the art of walking the runway with confidence and poise. Learn how to express emotions and connect with the audience through your movements and facial expressions.
             </p>
           </div>
           <div className="bg-white rounded-lg p-6 shadow-md">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Runway and Photography
+              EDITORIAL & COMMERCIAL MODELLING
             </h3>
             <p className="text-gray-600 mb-4">
-              Learn choreography styles for runway shows and camera walks. Discover makeup, skincare, hairstyles, and fashion trends. Master photographic posing techniques and understand the difference between high fashion catalogs and editorial poses.
+              Understand the differences between editorial and commercial modeling. Learn how to adapt your poses and expressions for various types of shoots and campaigns.
             </p>
           </div>
           <div className="bg-white rounded-lg p-6 shadow-md">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Auditions and Pageants
+              SOCIAL MEDIA BRANDING FOR MODELS
             </h3>
             <p className="text-gray-600">
-              Prepare for auditions and castings with the right attitude and agency etiquette. Develop stage presence, flair, and charisma. Get ready for Mr. and Mrs. India and other international pageants.
+              Discover how to build your personal brand on social media platforms. Learn strategies for engaging with your audience and showcasing your modeling work effectively.
             </p>
           </div>
         </div>
         <div className="text-center mt-8">
-        <a href='https://api.whatsapp.com/send?phone=+918096598155&text=Applying for LEVEL-Elite Modeling SCHOOL' className="bg-black text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-gray-600">
+          <a href='https://api.whatsapp.com/send?phone=+918096598155&text=Applying for LEVEL-Elite Modeling SCHOOL' className="bg-black text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-gray-600">
             Apply
           </a>
         </div>
-        
       </div>
     </div>
   );
