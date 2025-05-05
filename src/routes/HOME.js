@@ -16,18 +16,94 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Ilahe Modeling and Finishing School</title>
-        <meta name="description" content="Join Ilahe Modeling and Finishing School to enhance your modeling skills and personal growth. Apply now to embark on a journey of self-discovery and confidence." />
-        <meta name="keywords" content="modeling school, finishing school, personal growth, professional development, confidence, self-discovery" />
-        <meta name="author" content="Ilahe" />
-        <link rel="canonical" href="https://ilahe.in/" />
-        {/* Add Open Graph tags for social media sharing */}
-        <meta property="og:title" content="Ilahe Modeling and Finishing School" />
-        <meta property="og:description" content="Join Ilahe Modeling and Finishing School to enhance your modeling skills and personal growth. Apply now to embark on a journey of self-discovery and confidence." />
-        <meta property="og:image" content="URL_to_your_image" />
-        <meta property="og:url" content="https://ilahe.in/" />
-        <meta property="og:type" content="modeling school, finishing school, personal growth, professional development, confidence, self-discovery." />
-      </Helmet>
+  <meta charSet="utf-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <meta name="language" content="en" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Ilahe Modeling & Finishing School | Boost Your Confidence & Career</title>
+  <meta name="description" content="Enroll at Ilahe Modeling & Finishing School - India's top-rated institute for personal growth, grooming, and professional development. Unleash your true potential today!" />
+  <meta name="keywords" content="Modeling School, Finishing School, Personal Development, Grooming Classes, Professional Growth, Confidence Building, Self-Discovery" />
+  <meta name="author" content="Ilahe" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="application-name" content="Ilahe Modeling & Finishing School" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <link rel="canonical" href="https://ilahe.in/" />
+  <link rel="alternate" hrefLang="en" href="https://ilahe.in/" />
+  <link rel="alternate" hrefLang="x-default" href="https://ilahe.in/" />
+
+  <link rel="icon" href="https://ilahe.in/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://ilahe.in/apple-touch-icon.png" sizes="180x180" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://ilahe.in" />
+
+  <meta property="og:title" content="Ilahe Modeling & Finishing School | Boost Your Confidence & Career" />
+  <meta property="og:description" content="Join Ilahe and transform your personality & career. India's leading grooming & modeling school. Apply Now!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ilahe.in/" />
+  <meta property="og:image" content="https://ilahe.in/static/media/ilahe-modeling-banner.png" />
+  <meta property="og:image:secure_url" content="https://ilahe.in/static/media/ilahe-modeling-banner.png" />
+  <meta property="og:image:alt" content="Ilahe Modeling & Finishing School" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Ilahe" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:see_also" content="https://www.facebook.com/ilaheschool" />
+  <meta property="og:see_also" content="https://www.instagram.com/ilahe_school" />
+  <meta property="og:see_also" content="https://twitter.com/ilaheofficial" />
+  <meta property="og:see_also" content="https://www.linkedin.com/company/ilahe" />
+  <meta property="og:see_also" content="https://www.youtube.com/@ilaheofficial" />
+ 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ilahe Modeling & Finishing School | Boost Your Confidence & Career" />
+  <meta name="twitter:description" content="Enhance your skills & confidence with Ilahe - India's #1 Modeling & Finishing School. Apply now." />
+  <meta name="twitter:image" content="https://ilahe.in/static/media/ilahe-modeling-banner.png" />
+  <meta name="twitter:image:alt" content="Ilahe Modeling & Finishing School" />
+  <meta name="twitter:site" content="@ilaheofficial" />
+  <meta name="twitter:creator" content="@ilaheofficial" />
+  <meta name="twitter:domain" content="ilahe.in" />
+  <meta name="twitter:url" content="https://ilahe.in/" />
+
+ 
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Ilahe Modeling & Finishing School",
+        "alternateName": "Ilahe",
+        "url": "https://ilahe.in/",
+        "logo": "https://ilahe.in/static/media/logo.png",
+        "description": "India's leading Modeling & Finishing School for personality development, grooming & confidence building.",
+        "sameAs": [
+          "https://www.facebook.com/ilaheschool",
+          "https://www.instagram.com/ilahe_school",
+          "https://www.youtube.com/@Bharathiberri"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-7893350700",
+          "contactType": "Customer Support",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Hindi"]
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://ilahe.in/"
+        }
+      })
+    }}
+  />
+</Helmet>
+
       <main className="overflow-hidden">
         <ImageSlider />
 

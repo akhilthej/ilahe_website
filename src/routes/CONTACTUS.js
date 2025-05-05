@@ -72,13 +72,120 @@ const ContactForm = () => {
   return (
     <div>
       <Helmet>
-        <title>Contact us</title>
-        <meta
-          name="description"
-          content="Web Development and Digital Marketing Company. We are here to build you business online. One stop for all your digital needs."
-        />
-        <link rel="canonical" href="/contactus" />
-      </Helmet>
+
+  <meta charSet="utf-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+  <meta httpEquiv="Content-Language" content="en" />
+  <title>Contact Us | Ilahe - Modeling & Finishing School</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <meta name="description" content="Get in touch with Ilahe Modeling & Finishing School to start your journey in professional modeling, grooming, and personality development." />
+  <meta name="keywords" content="Contact Ilahe, Modeling School, Finishing School, Personality Development, Grooming Classes, Professional Modeling Training" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Ilahe - Modeling & Finishing School" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="application-name" content="Ilahe" />
+  <meta name="apple-mobile-web-app-title" content="Ilahe Contact" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="msapplication-TileColor" content="#000000" />
+  <meta name="rating" content="General" />
+  <meta name="copyright" content="Ilahe" />
+  <meta name="subject" content="Contact Ilahe - Modeling & Finishing School" />
+
+
+  <link rel="canonical" href="https://ilahe.in/contactus" />
+  <link rel="alternate" hrefLang="en" href="https://ilahe.in/contactus" />
+  <link rel="alternate" hrefLang="x-default" href="https://ilahe.in/contactus" />
+
+ 
+  <link rel="icon" href="https://ilahe.in/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://ilahe.in/apple-touch-icon.png" sizes="180x180" />
+
+  <meta property="og:title" content="Contact Us | Ilahe - Modeling & Finishing School" />
+  <meta property="og:description" content="Reach out to Ilahe Modeling & Finishing School for expert training in modeling, grooming, and etiquette. Start your transformation today!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ilahe.in/contactus" />
+  <meta property="og:image" content="https://ilahe.in/static/media/contactbanner.png" />
+  <meta property="og:image:alt" content="Contact Ilahe - Modeling & Finishing School" />
+  <meta property="og:site_name" content="Ilahe" />
+  <meta property="og:locale" content="en_IN" />
+
+ 
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Us | Ilahe - Modeling & Finishing School" />
+  <meta name="twitter:description" content="Join Ilahe Modeling & Finishing School to enhance your confidence, personality, and modeling skills." />
+  <meta name="twitter:image" content="https://ilahe.in/static/media/contactbanner.png" />
+  <meta name="twitter:image:alt" content="Contact Ilahe - Modeling & Finishing School" />
+  <meta name="twitter:site" content="@ilaheofficial" />
+  <meta name="twitter:creator" content="@ilaheofficial" />
+  <meta name="twitter:domain" content="ilahe.in" />
+  <meta name="twitter:url" content="https://ilahe.in/contactus" />
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact Ilahe",
+      "url": "https://ilahe.in/contactus",
+      "description": "Contact Ilahe Modeling & Finishing School to kickstart your career in modeling and personality development.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Ilahe",
+        "url": "https://ilahe.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ilahe.in/static/media/logo.png"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-7893350700",
+          "contactType": "Customer Support",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Hindi"]
+        },
+        "sameAs": [
+          "https://www.facebook.com/ilaheschool",
+          "https://www.instagram.com/ilahe_school",
+          "https://twitter.com/ilaheofficial",
+          "https://www.youtube.com/@Bharathiberri"
+        ]
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ilahe.in/contactus"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ilahe.in/static/media/contactbanner.png",
+        "width": 1200,
+        "height": 630
+      },
+      "datePublished": "2024-04-01T12:00:00+05:30",
+      "dateModified": new Date().toISOString(),
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ilahe.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact Us",
+            "item": "https://ilahe.in/contactus"
+          }
+        ]
+      }
+    })}
+  </script>
+</Helmet>
+
+
+
 
       {/* Title Card */}
       <section

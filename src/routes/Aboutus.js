@@ -10,10 +10,82 @@ const Aboutus = () => {
   return (
     <main >
       <Helmet>
-            <title>About Us ilahe</title>
-            <meta name="description" content='Discover the top modeling and finishing school to refine your skills, boost your confidence, and embark on a successful modeling career.'/>
-            <link rel="canonical" href="/aboutus" />
-      </Helmet>
+  <meta charSet="utf-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+  <title>About Us | ilahe - Leading Modeling & Finishing School in India</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <meta name="description" content="Get to know ilahe – India’s top modeling & finishing school dedicated to shaping aspiring models with confidence, skills, and career-ready training."
+  />
+  <meta name="keywords" content="About ilahe, Modeling School India, Finishing School, Modeling Courses, Personality Development, Professional Growth"
+  />
+  <link rel="canonical" href="https://ilahe.in/aboutus" />
+  <link rel="alternate" hrefLang="en" href="https://ilahe.in/aboutus" />
+  <link rel="alternate" hrefLang="x-default" href="https://ilahe.in/aboutus" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="ilahe - Modeling & Finishing School" />
+  <meta name="copyright" content="ilahe © 2025" />
+  <meta name="theme-color" content="#000000" />
+
+ 
+  <meta property="og:title" content="About Us | ilahe - Modeling & Finishing School" />
+  <meta property="og:description" content="Meet ilahe – India’s premier modeling & finishing school committed to building confidence and career opportunities for aspiring models."
+  />
+  <meta property="og:url" content="https://ilahe.in/aboutus" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://ilahe.in/static/media/finishingschool.4ad6161424f2c4542e86.png" />
+  <meta property="og:image:alt" content="ilahe - Modeling & Finishing School" />
+  <meta property="og:site_name" content="ilahe - Modeling & Finishing School" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:updated_time" content="2025-03-27T09:00:00+05:30" />
+  <meta property="article:author" content="ilahe - Modeling & Finishing School" />
+  <meta property="article:published_time" content="2023-01-01T09:00:00+05:30" />
+  <meta property="article:section" content="About Us" />
+  <meta property="article:tag" content="Modeling School, Finishing School, India" />
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Us | ilahe - Modeling & Finishing School" />
+  <meta name="twitter:description" content="Discover ilahe’s vision and how we empower aspiring models with skills, confidence & career growth."
+  />
+  <meta name="twitter:image" content="https://ilahe.in/static/media/finishingschool.4ad6161424f2c4542e86.png" />
+  <meta name="twitter:image:alt" content="ilahe - Modeling & Finishing School" />
+  <meta name="twitter:site" content="@ilahe_official" />
+  <meta name="twitter:creator" content="@ilahe_official" />
+
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "ilahe - Modeling & Finishing School",
+        "url": "https://ilahe.in",
+        "logo": "https://ilahe.in/static/media/logo.png",
+        "description": "India’s leading modeling and finishing school empowering aspiring models with confidence, skills, and career-ready training.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Fifth flore Abacus tower 501 besides GVK one mall banjara hills",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "TG",
+          "postalCode": "500082",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-7893350700",
+          "contactType": "customer service",
+          "email": "info@ilahe.in"
+        },
+        "sameAs": [
+          "https://www.facebook.com/ilaheschool",
+          "https://www.instagram.com/ilahe_school",
+          "https://twitter.com/ilahe_official"
+          "https://www.youtube.com/@Bharathiberri"
+        ]
+      }
+    `}
+  </script>
+</Helmet>
+
     
      
         
